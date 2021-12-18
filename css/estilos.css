@@ -1,0 +1,295 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+}
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+/* GENERAL */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "DM+Sans", sans-serif;
+    background-color: #fcf9fb;
+    min-height: 100vh;
+    background-image: url(/imagenes/fondo_ondas.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+li, a, h5 {
+    color: #fcf9fb;
+    text-decoration: none;
+}
+button {
+    font-size: 18px;
+    color: #fcf9fb;
+}
+h1, h2, p {
+    color: #646464;
+    text-decoration: none;
+}
+h1 {
+    font-size: 1.8rem;
+    color: #ce4e9d
+}
+h2 {
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+h5 {
+    font-weight: 400;
+    font-size: .7rem;
+}
+p {
+    margin-top: -.5rem;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+/* BARRA NAVEGACION */
+.enc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    background-color: #c4c4c4;
+    z-index: 1;
+}
+.enc__logo {
+    height: 2rem;
+    padding: .5rem;
+}
+.enc__navMenu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    height: 3rem;
+}
+.enc__nav li {
+    height: fit-content;
+}
+.enc__nav li a {
+    padding: 1rem;
+    transition: all .5s ease;
+}
+.enc__nav li a:hover {
+    background-color: #ce4e9d;
+}
+
+/* BOTONES */
+.boton__1 {
+    padding: .8rem 2rem;
+    border-radius: 2rem;
+    background-color: #cc8db4;
+    border: none;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.boton__1:hover {
+    background-color: #ce4e9d
+}
+
+/* PIE DE PAGINA */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding: 0 .8rem 0 .8rem;
+    height: 3rem;
+    background-color: #c4c4c4;
+    z-index: 1;
+}
+.footer__link {
+    display: flex;
+    align-items: center;
+}
+.icono {
+    height: 1rem;
+    padding-left: .5rem;
+}
+
+/* MAIN PORTADA */
+.main__contPpal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 2rem;
+}
+.main__contPpalTxt {
+    position: relative;
+    width: 55%;
+    height: auto;
+    text-align: center;
+}
+.logo {
+    height: 7rem;
+    margin-bottom: 1.8rem;
+}
+
+/* Imagen portada c/ hover overlay */
+.main__imgLat {
+    position: relative;
+    width: 35%;
+    height: auto;
+    min-width: 250px;
+}
+.imglat {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 100%;
+}
+.main__imgBoton {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.main__imgLat:hover .imglat {
+    opacity: 0.5;
+}
+.main__imgLat:hover .contppal__botonimg {
+    opacity: 1;
+}
+.contacto {
+    padding: 40px;
+}
+
+/* CONTACTO */
+.section__contacto {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+.section__contacto h1 {
+    padding-bottom: .5rem;
+}
+.section__consulta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contppal__consulta img {
+    height: 90px;
+}
+.formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    border-radius: 5px;
+    padding: 20px;
+}
+fieldset {
+    border:0px;
+}
+.formulario__botones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ce4e9d;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ce4e9d;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 45%;
+    background-color: #4CAF50;
+    color: white;
+    padding: .8rem 2rem;
+    margin: 8px 0;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+input[type=reset] {
+    width: 45%;
+    background-color: #646464;
+    color: white;
+    padding: .8rem 2rem;
+    margin: 8px 0;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+input[type=reset]:hover {
+    background-color: #494949;
+}
+.formulario__inferior {
+    display: flex;
+}
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.cuadroconsulta {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+/* SERVICIOS */
+.cont__gralservicios {
+    margin: auto;
+    position: relative;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.cont__servicio {
+    position: relative;
+}
+.cont__servicio img {
+    object-fit: cover;
+    display: block;
+    height: 280px;
+    width: 280px;
+}
+.cont__servicio h2 {
+    color: #fcf9fb;
+    position: relative;
+    text-align: center;
+    background-color: #cc8db4;
+    padding: 15px;
+}
+.videos {
+    padding: 0 0 65px 0;
+}
+.videos iframe {
+    display: block;
+    margin: auto;
+}
