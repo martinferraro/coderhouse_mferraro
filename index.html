@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
-<body>
+<body class="body__index">
     <!-- Encabezado -->
     <header class="enc">
         <img class="enc__logo" src="./imagenes/df_logo_icono.svg" alt="Logo">
-        <nav class="enc__nav">
+        <img class="enc__logoMov" src="../imagenes/logo_enc_mov.svg" alt="Logomov"><nav class="enc__nav">
             <ul class="enc__navMenu">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./paginas/servicios.html">Servicios</a></li>
@@ -42,23 +42,25 @@
                     <button class="boton__1" type="submit">Contacto</button>
                 </form>
         </section>
-
-        <!-- Imagen lateral c/ hover overlay -->
-        <div class="main__imgLat">
-            <img class="imglat" src="./imagenes/imghomepage.jpg" alt="Portfolio"></a>
-            <div class="main__imgBoton">
-                <form action="./paginas/portfolio.html">
-                    <button class="boton__1" type="submit">Portfolio</button>
-                </form>
-            </div>
-        </div>
     </main>
+    
+    <!-- Imagen lateral c/ hover overlay -->
+    <aside class="main__imgLat">
+        <div>
+            <img class="imgLat" src="./imagenes/imghomepage.jpg" alt="Portfolio"></a>
+        </div>
+        <div class="main__imgBoton">
+            <form action="./paginas/portfolio.html">
+                <button class="boton__1" type="submit">Portfolio</button>
+            </form>
+        </div>
+    </aside>
 
     <!-- Pie de página -->
-    <footer>
+    <footer class="pie">
         <h5>©2021 Daniela Ferraro. Todos los derechos reservados.</h5>
     <div class="footer__link">
-        <a class="pie-ig" href="https://www.instagram.com/daniferraro.makeup/" target="_blank">Seguinos en Instagram<img class="icono" src="./imagenes/instagram.svg" alt="instagram.com/daniferraro.makeup"></a>
+        <a class="pieIg" href="https://www.instagram.com/daniferraro.makeup/" target="_blank">Seguinos en Instagram<img class="iconoIg" src="./imagenes/instagram.svg" alt="instagram.com/daniferraro.makeup"></a>
     </div>
     </footer>
 

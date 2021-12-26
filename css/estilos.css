@@ -8,8 +8,6 @@
 
 /* GENERAL */
 body {
-    display: flex;
-    flex-direction: column;
     font-family: "DM+Sans", sans-serif;
     background-color: #fcf9fb;
     min-height: 100vh;
@@ -23,7 +21,6 @@ li, a, h5 {
     text-decoration: none;
 }
 button {
-    font-size: 18px;
     color: #fcf9fb;
 }
 h1, h2, p {
@@ -51,6 +48,7 @@ p {
 
 /* BARRA NAVEGACION */
 .enc {
+    grid-area: enc;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,6 +57,11 @@ p {
     z-index: 1;
 }
 .enc__logo {
+    height: 2rem;
+    padding: .5rem;
+}
+.enc__logoMov {
+    display: none;
     height: 2rem;
     padding: .5rem;
 }
@@ -81,6 +84,7 @@ p {
 
 /* BOTONES */
 .boton__1 {
+    font-size: 1rem;
     padding: .8rem 2rem;
     border-radius: 2rem;
     background-color: #cc8db4;
@@ -93,7 +97,8 @@ p {
 }
 
 /* PIE DE PAGINA */
-footer {
+.pie {
+    grid-area: pie;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,13 +112,23 @@ footer {
     display: flex;
     align-items: center;
 }
-.icono {
+.iconoIg {
     height: 1rem;
     padding-left: .5rem;
 }
 
 /* MAIN PORTADA */
+.body__index {
+    display: grid;
+    grid-template-areas:
+        "enc enc"
+        "main__contPpal main__imgLat"
+        "pie pie";
+    grid-template-rows: 3rem auto 3rem; 
+    grid-template-columns: 60% auto;
+}
 .main__contPpal {
+    grid-area: main__contPpal;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -122,30 +137,30 @@ footer {
 }
 .main__contPpalTxt {
     position: relative;
-    width: 55%;
+    width: 100%;
     height: auto;
     text-align: center;
 }
 .logo {
-    height: 7rem;
+    width: 75%;
     margin-bottom: 1.8rem;
 }
 
 /* Imagen portada c/ hover overlay */
 .main__imgLat {
+    grid-area: main__imgLat;
+    display: flex;
+    align-items: center;
     position: relative;
-    width: 35%;
+    width: 80%;
     height: auto;
-    min-width: 250px;
 }
-.imglat {
+.imgLat {
     opacity: 1;
     width: 100%;
-    height: auto;
-    display: block;
     transition: .5s ease;
     backface-visibility: hidden;
-    border-radius: 100%;
+    border-radius: 20% 0 20% 0;
 }
 .main__imgBoton {
     transition: .5s ease;
@@ -157,23 +172,69 @@ footer {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
-.main__imgLat:hover .imglat {
+.main__imgLat:hover .imgLat {
     opacity: 0.5;
 }
-.main__imgLat:hover .contppal__botonimg {
+.main__imgLat:hover .main__imgBoton {
     opacity: 1;
 }
 .contacto {
     padding: 40px;
 }
 
-/* CONTACTO */
-.section__contacto {
+/* BIOGRAFIA */
+.body__biografia {
+    display: grid;
+    grid-template-areas:
+        "enc enc"
+        "main__biografia imgDaniela"
+        "pie pie";
+    grid-template-rows: 3rem auto 3rem; 
+    grid-template-columns: 60% auto;
+}
+.main__biografia {
+    grid-area: main__biografia;
+    padding-top: 1rem;
+}
+.main__biografia h2 {
+    padding-top: 1.5rem;
+}
+.imgDaniela {
+    grid-area: imgDaniela;
+    padding-top: 1rem;
+}
+.imgDaniela img {
+    width: 80%;
+    border-radius: 20% 0 20% 0;
     padding: 2rem;
+}
+
+/* CONTACTO */
+.body__contacto {
+    display: grid;
+    grid-template-areas:
+        "enc enc"
+        "section__contacto section__contactoLogo"
+        "pie pie";
+    grid-template-rows: 3rem auto 3rem; 
+    grid-template-columns: 60% auto;
+}
+.section__contacto {
+    grid-area: section__contacto;
+    padding-top: 1rem;
     display: flex;
     flex-direction: column;
     flex: 1;
     justify-content: center;
+}
+.section__contactoLogo {
+    grid-area: section__contactoLogo;
+    padding-top: 1rem;
+}
+.section__contactoLogo img {
+    width: 80%;
+    height: 100%;
+    padding-left: 3rem;
 }
 .section__contacto h1 {
     padding-bottom: .5rem;
@@ -190,7 +251,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 100%;
     border-radius: 5px;
     padding: 20px;
 }
@@ -262,34 +323,296 @@ input[type=reset]:hover {
 }
 
 /* SERVICIOS */
-.cont__gralservicios {
-    margin: auto;
-    position: relative;
-    padding: 40px;
+.body__servicios {
+    display: grid;
+    grid-template-areas:
+    "enc enc enc"
+    "maquillaje skincare talleres"
+    "pie pie pie";
+    grid-template-rows: 3rem auto 3rem; 
+    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+}
+.servicio#maquillaje {
+    grid-area: maquillaje;
+}
+.servicio#skincare {
+    grid-area: skincare;
+}
+.servicio#talleres {
+    grid-area: talleres;
+}
+.servicio {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 .5rem 0;
+}
+.cont__servImg {
+    padding: 1rem
+}
+.cont__servImg img {
+    border-radius: 20% 0 20% 0;
+    width: 100%;
+}
+.cont__servTxt {
+    background-color: #cc8db4;
     display: flex;
     align-items: center;
-    gap: 15px;
+    height: 1rem
 }
-.cont__servicio {
+.cont__servTxt span {
+    color: #646464;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.1rem;
     position: relative;
+    background-color: #fcf9fb;
+    padding: 0rem 1rem 0rem 1rem;
 }
-.cont__servicio img {
+.cont_servTxtDescr {
+    font-size: .7rem;
+    padding: 0 2rem 0 2rem;
+}
+
+/* PORTFOLIO */
+.body__portfolio {
+    display: grid;
+    grid-template-areas: 
+    "enc enc"
+    "galeria portfolio__talleres"
+    "pie pie";
+    grid-template-rows: 3rem auto 3rem;
+    grid-template-columns: 50% 50%;
+}
+.galeria {
+    grid-area: galeria;
+    padding: 1rem 0 1rem 0;
+}
+.galeriaImagenes { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: .5rem;
+    grid-row-gap: .5rem;
+    padding: 1rem;
+}
+.galeriaImagenes img {
     object-fit: cover;
-    display: block;
-    height: 280px;
-    width: 280px;
+    height: 100%;
+    max-width: 100%;
 }
-.cont__servicio h2 {
-    color: #fcf9fb;
-    position: relative;
-    text-align: center;
-    background-color: #cc8db4;
-    padding: 15px;
+.portfolio__talleres {
+    grid-area: portfolio__talleres;
+    flex-direction: column;
+    padding: 1rem 0 1rem 0;
 }
-.videos {
-    padding: 0 0 65px 0;
+.cont__video {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
 }
-.videos iframe {
+.video iframe {
     display: block;
     margin: auto;
+}
+.testimonios {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.testimonios h2 {
+    font-size: 90%;
+}
+.testimonios p {
+    font-size: 80%;
+}
+
+@media screen and (max-width: 340px) {
+    /* GENERAL */
+    h1 {
+        font-size: .7rem;
+        padding-bottom: .5rem;
+    }
+    h2 {
+        font-size: .5rem;
+        padding: .5rem;
+    }
+    p {
+        font-size: .4rem;
+        padding: .3rem;
+    }
+    
+    .boton__1 {
+        font-size: .5rem;
+        padding: .4rem 1rem;
+    }
+    /* ENCABEZADO MOVIL */
+    .enc {
+        height: 1rem;
+    }
+    .enc__nav {
+        display: none;
+    }
+    .enc__logo {
+        display: none;
+    }
+    .enc__logoMov {
+        display: block;
+        height: 70%;
+        padding-left: .2rem;
+    }
+    /* PIE MOVIL */
+    .pie {
+        height: 1rem;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .footer__link {
+        font-size: .4rem;
+    }
+    .pie h5 {
+        font-size: .2rem;
+    }
+    .iconoIg {
+        height: .35rem;
+        padding-left: .1rem;
+    }
+    /* INDEX MOVIL */
+    .body__index {
+        grid-template-areas:
+        "enc"
+        "main__contPpal"
+        "main__imgLat"
+        "pie";
+        grid-template-rows: 1rem auto auto 1rem;
+    }
+    .main__contPpal {
+        padding: .5rem;
+    }
+    .logo {
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+    .imgLat {
+        opacity: 0.5;
+    }
+    .main__imgBoton {
+        opacity: 1;
+    }
+    /* SERVICIOS MOVIL */
+    .body__servicios {
+        grid-template-areas:
+        "enc"
+        "maquillaje"
+        "skincare"
+        "talleres"
+        "pie";
+        grid-template-rows: 1rem auto auto auto 1rem;
+    }
+    .servicio {
+        display: flex;
+        flex-direction: column;
+        padding: .5rem 0 .5rem 0;
+    }
+    .cont__servImg {
+        padding: .5rem 0 .5rem 0
+    }
+    .cont__servImg img {
+        border-radius: 10% 0 10% 0;
+    }
+    .cont__servTxt {
+        height: .5rem;
+    }
+    .cont__servTxt span {
+        font-size: .4rem;
+        padding: 0rem .1rem .05rem .1rem;
+    }
+    .cont_servTxtDescr {
+        font-size: .4rem;
+        padding: 0 .2rem 0 .2rem;
+    }
+
+    /* BIOGRAFIA MOVIL*/
+    .body__biografia {
+        grid-template-areas:
+            "enc"
+            "main__biografia"
+            "pie";
+        grid-template-rows: 1rem auto 1rem;
+    }
+    .main__biografia {
+        grid-area: main__biografia;
+        padding-top: .5rem;
+    }
+    .main__biografia h2 {
+        padding-top: .5rem;
+    }
+    .imgDaniela {
+        display: none;
+    }
+    
+    /* CONTACTO MOVIL */
+    .body__contacto {
+        grid-template-areas:
+            "enc"
+            "section__contacto"
+            "pie";
+        grid-template-rows: 1rem auto 1rem; 
+    }
+    .section__contactoLogo {
+        display: none;
+    }
+    
+    /* PORTFOLIO MOVIL */
+    .body__portfolio {
+        grid-template-areas: 
+        "enc"
+        "galeria"
+        "portfolio__talleres"
+        "pie";
+        grid-template-rows: 1rem auto auto 1rem;
+    }
+    .galeria {
+        padding: .5rem 0 0rem 0;
+    }
+    .galeriaImagenes { 
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: .05rem;
+        grid-row-gap: .05rem;
+        padding: .5rem 0 0 0;
+    }
+    .galeriaImagenes img {
+        object-fit: cover;
+        height: 100%;
+        max-width: 100%;
+    }
+    .portfolio__talleres {
+        grid-area: portfolio__talleres;
+        flex-direction: column;
+        padding: .5rem 0 .5rem 0;
+    }
+    .cont__video {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+    }
+    .video iframe {
+        width: 100%;
+        height: auto;
+        padding-top: .5rem;
+    }
+    .testimonios h2 {
+        font-size: 50%;
+    }
+    .testimonios p {
+        font-size: 30%;
+    }
+    
 }

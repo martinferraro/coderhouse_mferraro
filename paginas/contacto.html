@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
-<body>
+<body class="body__contacto">
     <!-- Encabezado -->
     <header class="enc">
         <img class="enc__logo" src="../imagenes/df_logo_icono.svg" alt="Logo">
+        <img class="enc__logoMov" src="../imagenes/logo_enc_mov.svg" alt="Logomov">
         <nav class="enc__nav">
             <ul class="enc__navMenu">
                 <li><a href="../index.html">Inicio</a></li>
@@ -26,7 +27,9 @@
 
     <!-- Formulario contacto -->
     <section class="section__contacto">
-        <h1>Contactanos</h1>
+        <div class="cont__servTxt">
+            <span>Contactanos</span>
+        </div>
         <div class="section__consulta">
             <form class="formulario" action="">
                 <fieldset>
@@ -59,16 +62,20 @@
                     </div>
                 </fieldset>
             </form>
-            <img src="../imagenes/df_logo.svg" alt="Logo">
         </div>
     </section>
+    <div class="section__contactoLogo">
+        <div class="cont__servTxt"></div>
+            <img src="../imagenes/df_logo.svg" alt="Logo">
+    </div>
 
     <!-- Pie de página -->
-    <footer>
+    <footer class="pie">
         <h5>©2021 Daniela Ferraro. Todos los derechos reservados.</h5>
     <div class="footer__link">
-        <a class="pie-ig" href="https://www.instagram.com/daniferraro.makeup/" target="_blank">Seguinos en Instagram<img class="icono" src="../imagenes/instagram.svg" alt="instagram.com/daniferraro.makeup"></a>
+        <a class="pieIg" href="https://www.instagram.com/daniferraro.makeup/" target="_blank">Seguinos en Instagram<img class="iconoIg" src="../imagenes/instagram.svg" alt="instagram.com/daniferraro.makeup"></a>
     </div>
     </footer>
+
 </body>
 </html>
