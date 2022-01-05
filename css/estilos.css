@@ -75,7 +75,7 @@ p {
     height: fit-content;
 }
 .enc__nav li a {
-    padding: 1rem;
+    padding: .94rem;
     transition: all .5s ease;
 }
 .enc__nav li a:hover {
@@ -152,12 +152,14 @@ p {
     display: flex;
     align-items: center;
     position: relative;
-    width: 80%;
-    height: auto;
+}
+.cont__imgLat {
+    display: flex;
+    justify-content: center;
 }
 .imgLat {
     opacity: 1;
-    width: 100%;
+    width: 80%;
     transition: .5s ease;
     backface-visibility: hidden;
     border-radius: 20% 0 20% 0;
@@ -203,10 +205,17 @@ p {
     grid-area: imgDaniela;
     padding-top: 1rem;
 }
+.imgDaniela__img {
+    height: 97%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .imgDaniela img {
     width: 80%;
     border-radius: 20% 0 20% 0;
-    padding: 2rem;
 }
 
 /* CONTACTO */
@@ -224,25 +233,25 @@ p {
     padding-top: 1rem;
     display: flex;
     flex-direction: column;
-    flex: 1;
-    justify-content: center;
 }
 .section__contactoLogo {
     grid-area: section__contactoLogo;
     padding-top: 1rem;
 }
+.cont__contactoLogo {
+    display: flex;
+    height: 93%;
+    justify-content: center;
+}
 .section__contactoLogo img {
     width: 80%;
-    height: 100%;
-    padding-left: 3rem;
 }
 .section__contacto h1 {
     padding-bottom: .5rem;
 }
 .section__consulta {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+
 }
 .contppal__consulta img {
     height: 90px;
@@ -310,16 +319,22 @@ input[type=reset]:hover {
 }
 .formulario__inferior {
     display: flex;
+    padding-top: .5rem;
 }
 .checkbox {
     display: flex;
     flex-direction: column;
     width: 50%;
+    justify-content: space-between;
+}
+.checkbox div {
+    padding-left: 1rem;
 }
 .cuadroconsulta {
     display: flex;
     flex-direction: column;
     width: 50%;
+    justify-content: center;
 }
 
 /* SERVICIOS */
@@ -355,8 +370,6 @@ input[type=reset]:hover {
 }
 .cont__servTxt {
     background-color: #cc8db4;
-    display: flex;
-    align-items: center;
     height: 1rem
 }
 .cont__servTxt span {
@@ -370,7 +383,7 @@ input[type=reset]:hover {
 }
 .cont_servTxtDescr {
     font-size: .7rem;
-    padding: 0 2rem 0 2rem;
+    padding: 0 1rem 0 1rem;
 }
 
 /* PORTFOLIO */
@@ -387,18 +400,23 @@ input[type=reset]:hover {
     grid-area: galeria;
     padding: 1rem 0 1rem 0;
 }
-.galeriaImagenes { 
+.cont__galeria {
+    display: flex;
+    height: 100%;
+    padding-left: 1rem;
+    align-items: center;
+}
+.galeriaImagenes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 8.5rem);
     grid-column-gap: .5rem;
     grid-row-gap: .5rem;
-    padding: 1rem;
 }
 .galeriaImagenes img {
     object-fit: cover;
+    width: 100%;
     height: 100%;
-    max-width: 100%;
 }
 .portfolio__talleres {
     grid-area: portfolio__talleres;
@@ -429,8 +447,12 @@ input[type=reset]:hover {
     font-size: 80%;
 }
 
-@media screen and (max-width: 340px) {
+/* RESPONSIVE MOVIL */
+@media screen and (max-width: 320px) {
     /* GENERAL */
+    body {
+        background-image: none;
+    }
     h1 {
         font-size: .7rem;
         padding-bottom: .5rem;
@@ -613,6 +635,10 @@ input[type=reset]:hover {
     }
     .testimonios p {
         font-size: 30%;
-    }
-    
+    }   
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 768px) {
+
 }
