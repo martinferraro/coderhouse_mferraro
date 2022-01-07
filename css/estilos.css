@@ -227,18 +227,20 @@ p {
 .main__serv {
     grid-area: main__serv;
     display: flex;
+/*     height: 88vh; */
+    padding: 1vh 0 1vh 0;
 }
 .servicio {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 .cont__serv {
     display: flex;
     flex-direction: column;
+    height: 100%;
     overflow: auto;
     align-items: center;
-    padding: max(1vw, 10px);
+    padding: max(1vw, 10px) max(1vw, 10px) 0 max(1vw, 10px);
 }
 .servicio#maquillaje {
     grid-area: maquillaje;
@@ -579,21 +581,22 @@ input[type=reset]:hover {
         "pie";
         grid-template-rows: min-content auto min-content;
         grid-template-columns: auto;
-        align-items: start;
-        align-content: space-between;
+        align-content:unset;
     }
     .main__serv {
         flex-direction: column;
-        padding: max(1vw, 10px) 0 max(1vw, 10px) 0;
         justify-content: space-evenly;
     }
     .servicio {
         height: 100%;
+        justify-content: space-around;
     }
     .cont__serv {
         flex-direction: row;
+        align-items: center;
+        text-align: center;
         height: 24vh;
-        align-items: flex-start;
+        padding: max(1vw, 10px);
     }
     .cont__servTxt {
         height: 20px;
@@ -602,11 +605,16 @@ input[type=reset]:hover {
         font-size: 20px;
     }
     .cont_servTxtDescr {
-        padding: 0 max(1vw, 10px) 0 max(1vw, 10px);
+        padding: 0;
+        padding-left: max(1vw, 10px);
         font-size: 15px;
     }
     #skincareCont {
         flex-direction: row-reverse;
+    }
+    #skincareCont .cont_servTxtDescr {
+        padding: 0;
+        padding-right: max(1vw, 10px);
     }
 }
 
@@ -653,9 +661,6 @@ input[type=reset]:hover {
         font-size: 10px;
     }
     /* CELULAR SERVICIOS */
-    .main__serv {
-        padding: 0;
-    }
     .cont__servImg {
         width: 300%;
     }
@@ -666,7 +671,6 @@ input[type=reset]:hover {
         font-size: 14px;
     }
     .cont_servTxtDescr {
-        padding: 0 max(1vw, 10px) 0 max(1vw, 10px);
         font-size: 12px;
     }
 }
