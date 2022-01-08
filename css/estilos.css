@@ -503,7 +503,7 @@ input[type=reset]:hover {
 }
 
 /* TABLET */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 912px) {
     /* TABLET GENERAL */
     body {
         background-repeat: repeat;
@@ -595,7 +595,7 @@ input[type=reset]:hover {
         flex-direction: row;
         align-items: center;
         text-align: center;
-        height: 24vh;
+        height: 23vh;
         padding: max(1vw, 10px);
     }
     .cont__servTxt {
