@@ -10,68 +10,76 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
-<body class="body__index">
-    <!-- Encabezado -->
-    <header class="enc">
-        <img class="enc__logo" src="./imagenes/df_logo_icono.svg" alt="Logo">
-        <img class="enc__logoMov" src="../imagenes/logo_enc_mov.svg" alt="Logomov"><nav class="enc__nav">
-        <nav class="enc__nav">
-            <ul class="enc__navMenu">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./paginas/servicios.html">Servicios</a></li>
-                <li><a href="./paginas/portfolio.html">Portfolio</a></li>
-                <li><a href="./paginas/biografia.html">Sobre mí</a></li>
-                <li><a href="./paginas/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<body>
+    <!-- BARRA NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <img class="img-enc ms-2" src="./imagenes/df_logo_icono.svg" alt="Logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paginas/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paginas/portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paginas/biografia.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Cont principal -->
-    <main class="main__contPpal">
-        <section class="main__contPpalTxt">
-            <div>
-                <img class="logo" src="./imagenes/df_logo.svg" alt="Logo">
+    <!-- Cont ppal -->
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm-6">
+                <section class="contPpalTxt text-center">
+                    <div>
+                        <img class="img-fluid py-2" src="./imagenes/df_logo.svg" alt="Logo">
+                    </div>
+                    <div>
+                        <h3>Conectate con tu belleza, y tu salud</h3>
+                        <p>Maquillaje profesional, cosmetología y cuidado de la piel, talleres, y productos de primera calidad.  Para que potencies tu belleza, siempre acompañada por una profesional.</p>
+                    </div>
+                    <div>
+                        <h5>Comienza explorando nuestros servicios...</h5>
+                        <a class="btn btn-primary rounded-pill" href="./paginas/servicios.html" role="button">Inicia tu recorrido</a>
+                    </div>
+                    <div>
+                        <h5>...O comentanos tus necesidades, y te contactaremos a la brevedad.</h5>
+                        <a class="btn btn-primary rounded-pill" href="./paginas/contacto.html" role="button">Contacto</a>
+                    </div>
+                </section>
             </div>
-            <!-- Textos -->
-            <div>
-                <h1>Conectate con tu belleza, y tu salud</h1>
-                <p>Maquillaje profesional, cosmetología y cuidado de la piel, talleres, y productos de primera calidad.  Para que potencies tu belleza, siempre acompañada por una profesional.</p>
+            <!-- Imagen lateral c/ hover overlay -->
+            <div class="col-sm-6">
+                <div class="img-lat p-5 p-sm-0 p-md-4 p-lg-5">
+                    <img class="imgIndex" src="./imagenes/imghomepage.jpg" alt="Portfolio"></a>
+                    <div class="btn-img">
+                        <a class="btn btn-primary rounded-pill" href="./paginas/portfolio.html" role="button">Portfolio</a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h2>Comienza explorando nuestros servicios...</h2>
-                <!-- Botón link servicios -->
-                <form action="./paginas/servicios.html">
-                    <button class="boton__1" type="submit">Inicia tu recorrido</button>
-                </form>
-            </div>
-            <div>
-                <h2>...O comentanos tus necesidades, y te contactaremos a la brevedad.</h2>
-                <!-- Botón link consultas -->
-                <form action="./paginas/contacto.html">
-                    <button class="boton__1" type="submit">Contacto</button>
-                </form>
-            </div>
-        </section>
-    </main>
-    
-    <!-- Imagen lateral c/ hover overlay -->
-    <aside class="main__imgLat">
-        <div class="cont__imgLat">
-            <img class="imgLat" src="./imagenes/imghomepage.jpg" alt="Portfolio"></a>
         </div>
-        <div class="main__imgBoton">
-            <form action="./paginas/portfolio.html">
-                <button class="boton__1" type="submit">Portfolio</button>
-            </form>
-        </div>
-    </aside>
+    </div>
 
     <!-- Pie de página -->
     <footer class="pie">
-        <h5>©2022 Daniela Ferraro</h5>
-    <div class="footer__link">
-        <a class="pieIg" href="https://www.instagram.com/daniferraro.makeup/" target="_blank">Seguinos en Instagram<img class="iconoIg" src="./imagenes/instagram.svg" alt="instagram.com/daniferraro.makeup"></a>
-    </div>
+        <div class="container-fluid">
+            <h6>©2022 Daniela Ferraro</h6>
+            <a class="pieIg" href="https://www.instagram.com/daniferraro.makeup/" target="_blank">Seguinos en Instagram<img class="iconoIg" src="./imagenes/instagram.svg" alt="instagram.com/daniferraro.makeup"></a>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
