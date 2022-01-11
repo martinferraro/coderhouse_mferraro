@@ -196,20 +196,8 @@ h6 {
 }
 
 /* SERVICIOS */
-.body__servicios {
-    display: grid;
-    grid-template-areas:
-    "enc"
-    "main__serv"
-    "pie";
-    grid-template-rows: min-content max-content min-content;
-    grid-template-columns: auto;
-    align-content: space-between;
-}
 .main__serv {
-    grid-area: main__serv;
     display: flex;
-/*     height: 88vh; */
     padding: 1vh 0 1vh 0;
 }
 .servicio {
@@ -223,15 +211,6 @@ h6 {
     overflow: auto;
     align-items: center;
     padding: max(1vw, 10px) max(1vw, 10px) 0 max(1vw, 10px);
-}
-.servicio#maquillaje {
-    grid-area: maquillaje;
-}
-.servicio#skincare {
-    grid-area: skincare;
-}
-.servicio#talleres {
-    grid-area: talleres;
 }
 .cont__servImg {
     width: 100%;
@@ -264,17 +243,7 @@ h6 {
 }
 
 /* PORTFOLIO */
-.body__portfolio {
-    display: grid;
-    grid-template-areas: 
-    "enc enc"
-    "galeria portfolio__talleres"
-    "pie pie";
-    grid-template-rows: max(3vw, 5%) auto max(3vw, 5%);
-    grid-template-columns: 50% 50%;
-}
 .galeria {
-    grid-area: galeria;
     padding-top: max(1vw, 10px);
     padding-bottom: max(1vw, 10px);
 }
@@ -297,7 +266,6 @@ h6 {
     height: 100%;
 }
 .portfolio__talleres {
-    grid-area: portfolio__talleres;
     padding-top: max(1vw, 10px);
     padding-bottom: max(1vw, 10px);
 }
@@ -323,17 +291,7 @@ h6 {
 }
 
 /* BIOGRAFIA */
-.body__biografia {
-    display: grid;
-    grid-template-areas:
-        "enc enc"
-        "main__biografia imgDaniela"
-        "pie pie";
-    grid-template-rows: max(3vw, 5%) auto max(3vw, 5%);
-    grid-template-columns: 60% auto;
-}
 .main__biografia {
-    grid-area: main__biografia;
     padding-top: max(1vw, 10px);
     padding-bottom: max(1vw, 10px);
 }
@@ -348,7 +306,6 @@ h6 {
     padding-bottom: max(1.5vw, 10px);
 }
 .imgDaniela {
-    grid-area: imgDaniela;
     padding-top: max(1vw, 10px);
     padding-bottom: max(1vw, 10px);
 }
@@ -366,23 +323,12 @@ h6 {
 }
 
 /* CONTACTO */
-.body__contacto {
-    display: grid;
-    grid-template-areas:
-        "enc enc"
-        "section__contacto section__contactoLogo"
-        "pie pie";
-        grid-template-rows: max(4vw, 25px) auto max(4vw, 25px);
-    grid-template-columns: 60% auto;
-}
 .section__contacto {
-    grid-area: section__contacto;
     padding-top: 1rem;
     display: flex;
     flex-direction: column;
 }
 .section__contactoLogo {
-    grid-area: section__contactoLogo;
     padding-top: 1rem;
 }
 .cont__contactoLogo {
