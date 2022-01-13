@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
-<body>
+<body class="d-flex flex-column justify-content-between vh-100 min-vh-100">
     <!-- BARRA NAVEGACIÓN -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container-fluid">
             <img class="img-enc ms-2" src="../imagenes/df_logo_icono.svg" alt="Logo">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler bg-light bg-opacity-25 navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,46 +40,49 @@
         </div>
     </nav>
 
-    <section class="galeria">
-        <div class="cont__servTxt">
-            <span>Galería de Trabajos</span>
-        </div>
-        <div class="cont__galeria">
-            <div class="galeriaImagenes">
-                <img src="../imagenes/mkup01.jpeg" alt="imagen">
-                <img src="../imagenes/mkup02.jpeg" alt="imagen">
-                <img src="../imagenes/mkup03.jpg" alt="imagen">
-                <img src="../imagenes/mkup04.jpg" alt="imagen">
-                <img src="../imagenes/mkup05.jpg" alt="imagen">
-                <img src="../imagenes/mkup06.jpg" alt="imagen">
-                <img src="../imagenes/mkup07.jpg" alt="imagen">
-                <img src="../imagenes/mkup08.jpg" alt="imagen">
-                <img src="../imagenes/mkup09.jpg" alt="imagen">
-            </div>
-        </div>
-    </section>
+    <!-- CONTENIDO -->
+    <div class="container-fluid flex-fill">
+        <div class="row">
+            <section class="galeria col-sm-5">
+                <div class="cont__servTxt">
+                    <h5>Galería de Trabajos</h5>
+                </div>
+                <div class="cont__galeria">
+                    <div class="galeriaImagenes">
+                        <img src="../imagenes/mkup01.jpeg" alt="imagen">
+                        <img src="../imagenes/mkup02.jpeg" alt="imagen">
+                        <img src="../imagenes/mkup03.jpg" alt="imagen">
+                        <img src="../imagenes/mkup04.jpg" alt="imagen">
+                        <img src="../imagenes/mkup05.jpg" alt="imagen">
+                        <img src="../imagenes/mkup06.jpg" alt="imagen">
+                        <img src="../imagenes/mkup07.jpg" alt="imagen">
+                        <img src="../imagenes/mkup08.jpg" alt="imagen">
+                        <img src="../imagenes/mkup09.jpg" alt="imagen">
+                    </div>
+                </div>
+            </section>
 
-    <section class="portfolio__talleres">
-        <div class="cont__servTxt">
-            <span>Nuestros Talleres</span>
+            <section class="portfolio__talleres col-sm-7">
+                <div class="cont__servTxt">
+                    <h5>Nuestros Talleres</h5>
+                </div>
+                <div class="cont__video">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VoBC-6LSLMU" title="YouTube video player" frameborder="0"></iframe>
+                    </div>
+                    <div class="testimonios text-center">
+                        <h5>"Todo el mundo me preguntaba quién me maquilló ¡Súper contenta con el resultado! Muy recomendable"</h5>
+                        <p>Gabriela González, Casamiento, 15/10/2021</p>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="cont__video">
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VoBC-6LSLMU" title="YouTube video player" frameborder="0"></iframe>
-            </div>
-            <div class="testimonios">
-                <h2>"Todo el mundo me preguntaba quién me maquilló ¡Súper contenta con el resultado! Muy recomendable"</h2>
-                <p>Gabriela González, Casamiento, 15/10/2021</p>
-            </div>
-        </div>
-    </section>
+    </div>
 
-    <!-- Pie de página -->
-    <footer class="pie">
-        <div class="container-fluid">
-            <h6>©2022 Daniela Ferraro</h6>
-            <a class="pieIg" href="https://www.instagram.com/daniferraro.makeup/" target="_blank">Seguinos en Instagram<img class="iconoIg" src="../imagenes/instagram.svg" alt="instagram.com/daniferraro.makeup"></a>
-        </div>
+    <!-- PIE -->
+    <footer class="pie container-fluid">
+        <h6>©2022 Daniela Ferraro</h6>
+        <h6><a class="pieIg" href="https://www.instagram.com/daniferraro.makeup/" target="_blank">Seguinos en Instagram<img class="iconoIg" src="../imagenes/instagram.svg" alt="instagram.com/daniferraro.makeup"></a></h6>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

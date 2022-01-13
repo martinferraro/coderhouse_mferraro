@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
-<body>
+<body class="d-flex flex-column justify-content-between vh-100 min-vh-100">
     <!-- BARRA NAVEGACIÓN -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container-fluid">
             <img class="img-enc ms-2" src="../imagenes/df_logo_icono.svg" alt="Logo">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler bg-light bg-opacity-25 navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,58 +40,68 @@
         </div>
     </nav>
 
-    <!-- Formulario contacto -->
-    <section class="section__contacto">
-        <div class="cont__servTxt">
-            <span>Contactanos</span>
+    <!-- CONTENIDO -->
+    <div class="row align-items-center mx-auto m-2">
+        <!-- ICONOS -->
+        <div class="cont-iconos col-md-5 text-center d-flex flex-column">
+            <div>
+                <img class="img-contacto img-fluid py-2" src="../imagenes/df_logo.svg" alt="Logo">
+            </div>
+            <hr>
+            <div>
+                <h3>prueba</h3>
+            </div>
+            <hr>
         </div>
-        <div class="section__consulta">
-            <form class="formulario" action="">
-                <fieldset>
-                    <!-- <legend>Formulario de contacto</legend> -->
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required>
-                    <label for="email">e-mail</label>
-                    <input type="email" name="email" id="email" placeholder="Ingresa tu correo" required>
-                    <div class="formulario__inferior">
-                        <!-- Checkbox -->
-                        <div class="checkbox">
-                            <label for="temas">Quiero recibir información sobre:</label>
-                            <div><input type="checkbox" name="maquillaje">Maquillaje para eventos</div>
-                            <div><input type="checkbox" name="skincare">Cuidado de la piel</div>
-                            <div><input type="checkbox" name="talleres">Talleres</div>
-                            <div><input type="checkbox" name="productos">Productos</div>
-                        </div>
-                        <!-- Cuadro de consultas -->
-                        <div class="cuadroconsulta">
-                            <label for="consulta">Realiza tu consulta aquí</label>
-                            <textarea name="consulta" id="consulta" cols="30" rows="7"></textarea>
+        <!-- FORMULARIO -->
+        <div class="col-md-7 mx-auto">
+            <fieldset class="container">
+                <form class="card shadow">
+                    <!-- ENCABEZADO -->
+                    <div class="card-header">
+                        <div class="row d-flex">
+                            <h3 class="txt-contactoEnc text-white m-0">Contactanos</h3>
                         </div>
                     </div>
-                    <!-- Botones -->
-                    <div class="formulario__botones">
-                        <input type="reset" value="Borrar formulario">
-                        <input type="submit" value="Enviar formulario">
+                    <!-- DATOS FORMULARIO -->
+                    <div class="card-body">
+                        <div>
+                            <label for="Form-email3">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ingresa tu nombre" required>
+                        </div>
+                        <div>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Ingresa tu apellido" required>
+                        </div>
+                        <div>
+                            <label for="email">@ email</label>
+                            <input type="email" id="mail" name="mail" class="form-control" placeholder="Ingresa tu email" required>
+                        </div>
+                        <div>
+                            <label for="message5">Escribinos tu consulta...</label>
+                            <textarea type="text" id="comentario" name="comentario" rows="2" class="form-control md-textarea"></textarea>
+                            <div class="form-group">
+                            </div>
+                        </div>
+                        <!-- BOTONES -->
+                        <div class="row mt-3">
+                            <div class="col-md-6 text-center">
+                                <input class="btn btn-success btn-primary rounded-pill" type="reset" value="Borrar formulario">
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <input class="btn btn-success btn-primary rounded-pill" type="submit" value="Enviar formulario">
+                            </div>
+                        </div>
                     </div>
-                </fieldset>
-            </form>
-        </div>
-    </section>
-    <div class="section__contactoLogo">
-        <div class="cont__servTxt"></div>
-        <div class="cont__contactoLogo">
-            <img src="../imagenes/df_logo.svg" alt="Logo">
+                </form>
+            </fieldset>
         </div>
     </div>
-
-    <!-- Pie de página -->
-    <footer class="pie">
-        <div class="container-fluid">
-            <h6>©2022 Daniela Ferraro</h6>
-            <a class="pieIg" href="https://www.instagram.com/daniferraro.makeup/" target="_blank">Seguinos en Instagram<img class="iconoIg" src="../imagenes/instagram.svg" alt="instagram.com/daniferraro.makeup"></a>
-        </div>
+    
+    <!-- PIE -->
+    <footer class="pie container-fluid">
+        <h6>©2022 Daniela Ferraro</h6>
+        <h6><a class="pieIg" href="https://www.instagram.com/daniferraro.makeup/" target="_blank">Seguinos en Instagram<img class="iconoIg" src="../imagenes/instagram.svg" alt="instagram.com/daniferraro.makeup"></a></h6>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

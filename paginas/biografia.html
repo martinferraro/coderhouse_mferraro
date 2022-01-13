@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
-<body>
+<body class="d-flex flex-column justify-content-between vh-100 min-vh-100">
     <!-- BARRA NAVEGACIÓN -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container-fluid">
             <img class="img-enc ms-2" src="../imagenes/df_logo_icono.svg" alt="Logo">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler bg-light bg-opacity-25 navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,6 +40,7 @@
         </div>
     </nav>
 
+    <!-- CONTENIDO -->
     <main class="main__biografia">
         <div class="cont__servTxt">
             <span>Quién soy</span>
@@ -66,12 +67,10 @@
         </div>
     </div>
 
-    <!-- Pie de página -->
-    <footer class="pie">
-        <div class="container-fluid">
-            <h6>©2022 Daniela Ferraro</h6>
-            <a class="pieIg" href="https://www.instagram.com/daniferraro.makeup/" target="_blank">Seguinos en Instagram<img class="iconoIg" src="../imagenes/instagram.svg" alt="instagram.com/daniferraro.makeup"></a>
-        </div>
+    <!-- PIE -->
+    <footer class="pie container-fluid">
+        <h6>©2022 Daniela Ferraro</h6>
+        <h6><a class="pieIg" href="https://www.instagram.com/daniferraro.makeup/" target="_blank">Seguinos en Instagram<img class="iconoIg" src="../imagenes/instagram.svg" alt="instagram.com/daniferraro.makeup"></a></h6>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
