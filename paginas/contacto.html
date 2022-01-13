@@ -41,26 +41,29 @@
     </nav>
 
     <!-- CONTENIDO -->
-    <div class="row align-items-center mx-auto m-2">
+    <div class="container row align-items-center mx-auto m-2">
         <!-- ICONOS -->
-        <div class="cont-iconos col-md-5 text-center d-flex flex-column">
+        <div class="col-md-4 ms-auto text-center d-flex flex-column">
             <div>
                 <img class="img-contacto img-fluid py-2" src="../imagenes/df_logo.svg" alt="Logo">
             </div>
-            <hr>
-            <div>
-                <h3>prueba</h3>
+            <div class="tarjeta-iconos card shadow d-flex flex-row align-items-center justify-content-around p-3 mt-3">
+                <a href="https://www.instagram.com/daniferraro.makeup/" target="_blank"><img class="ico-cont" src="../imagenes/igrosa.svg" alt="IG"></a>
+                <a href="https://www.facebook.com/daniferraro.makeup/" target="_blank"><img class="ico-cont" src="../imagenes/facebook.svg" alt="FB"></a>
+                <div class="d-flex align-items-center">
+                    <img class="ico-cont" src="../imagenes/whatsapp.svg" alt="WA">
+                    <p class="tel-tarjeta m-0 ps-2">+54 11 555 5555</p>
+                </div>
             </div>
-            <hr>
         </div>
         <!-- FORMULARIO -->
-        <div class="col-md-7 mx-auto">
-            <fieldset class="container">
+        <div class="col-md-6 mx-auto">
+            <fieldset>
                 <form class="card shadow">
                     <!-- ENCABEZADO -->
                     <div class="card-header">
                         <div class="row d-flex">
-                            <h3 class="txt-contactoEnc text-white m-0">Contactanos</h3>
+                            <h3 class="text-white m-0 text-center">Contactanos</h3>
                         </div>
                     </div>
                     <!-- DATOS FORMULARIO -->
@@ -73,9 +76,15 @@
                             <label for="apellido">Apellido</label>
                             <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Ingresa tu apellido" required>
                         </div>
-                        <div>
-                            <label for="email">@ email</label>
-                            <input type="email" id="mail" name="mail" class="form-control" placeholder="Ingresa tu email" required>
+                        <div class="row">
+                            <div class="container col-lg-6 pe-1">
+                                <label for="email">@ email</label>
+                                <input type="email" id="mail" name="mail" class="form-control" placeholder="Ingresa tu email" required>
+                            </div>
+                            <div class="container col-lg-6 ps-1">
+                                <label for="telefono">Teléfono</label>
+                                <input type="number" id="telefono" name="telefono" class="form-control" placeholder="Teléfono" required>
+                            </div>
                         </div>
                         <div>
                             <label for="consulta">Escribinos tu consulta...</label>
