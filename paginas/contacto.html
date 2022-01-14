@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
-<body class="d-flex flex-column justify-content-between vh-100 min-vh-100">
+<body class="d-flex flex-column justify-content-between">
     <!-- BARRA NAVEGACIÓN -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container-fluid">
@@ -43,13 +43,14 @@
     <!-- CONTENIDO -->
     <div class="container row align-items-center mx-auto m-2">
         <!-- ICONOS -->
-        <div class="col-md-4 ms-auto text-center d-flex flex-column">
+        <div class="col-lg-4 ms-auto text-center d-flex flex-column">
             <div>
                 <img class="img-contacto img-fluid py-2" src="../imagenes/df_logo.svg" alt="Logo">
             </div>
-            <div class="tarjeta-iconos card shadow d-flex flex-row align-items-center justify-content-around p-3 mt-3">
-                <a href="https://www.instagram.com/daniferraro.makeup/" target="_blank"><img class="ico-cont" src="../imagenes/igrosa.svg" alt="IG"></a>
-                <a href="https://www.facebook.com/daniferraro.makeup/" target="_blank"><img class="ico-cont" src="../imagenes/facebook.svg" alt="FB"></a>
+            <h3 class="txt-contacto pb-3.5 pt-4">¡Te esperamos!</h3>
+            <div class="tarjeta-iconos card shadow d-flex flex-row align-items-center justify-content-around p-3 mt-3 mb-3">
+                <a href="https://www.instagram.com/daniferraro.makeup/" target="_blank"><img class="ico-cont2" src="../imagenes/igrosa.svg" alt="IG"></a>
+                <a href="https://www.facebook.com/daniferraro.makeup/" target="_blank"><img class="ico-cont2" src="../imagenes/facebook.svg" alt="FB"></a>
                 <div class="d-flex align-items-center">
                     <img class="ico-cont" src="../imagenes/whatsapp.svg" alt="WA">
                     <p class="tel-tarjeta m-0 ps-2">+54 11 555 5555</p>
@@ -57,13 +58,13 @@
             </div>
         </div>
         <!-- FORMULARIO -->
-        <div class="col-md-6 mx-auto">
+        <div class="col-lg-6 mx-auto">
             <fieldset>
-                <form class="card shadow">
+                <form class="formulario card shadow">
                     <!-- ENCABEZADO -->
                     <div class="card-header">
                         <div class="row d-flex">
-                            <h3 class="text-white m-0 text-center">Contactanos</h3>
+                            <h3 class="txt-headerTarj text-white m-0 text-center">Contactanos</h3>
                         </div>
                     </div>
                     <!-- DATOS FORMULARIO -->
@@ -77,18 +78,18 @@
                             <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Ingresa tu apellido" required>
                         </div>
                         <div class="row">
-                            <div class="container col-lg-6 pe-1">
+                            <div class="email container col-lg-6">
                                 <label for="email">@ email</label>
                                 <input type="email" id="mail" name="mail" class="form-control" placeholder="Ingresa tu email" required>
                             </div>
-                            <div class="container col-lg-6 ps-1">
-                                <label for="telefono">Teléfono</label>
-                                <input type="number" id="telefono" name="telefono" class="form-control" placeholder="Teléfono" required>
+                            <div class="telefono container col-lg-6">
+                                <label for="telefono">Teléfono de contacto</label>
+                                <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="Teléfono" required>
                             </div>
                         </div>
                         <div>
-                            <label for="consulta">Escribinos tu consulta...</label>
-                            <textarea type="text" id="comentario" name="comentario" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="consulta">Escribinos tu consulta</label>
+                            <textarea type="text" id="comentario" name="comentario" rows="2" class="form-control md-textarea" placeholder="Buenas! Les quería consultar acerca de..." required></textarea>
                         </div>
                         <!-- BOTONES -->
                         <div class="row mt-3">
@@ -104,11 +105,12 @@
             </fieldset>
         </div>
     </div>
-    
+
     <!-- PIE -->
     <footer class="pie container-fluid">
-        <h6>©2022 Daniela Ferraro</h6>
-        <h6><a class="pieIg" href="https://www.instagram.com/daniferraro.makeup/" target="_blank">Seguinos en Instagram<img class="iconoIg" src="../imagenes/instagram.svg" alt="instagram.com/daniferraro.makeup"></a></h6>
+        <h6 class="pe-2">©2022 Daniela Ferraro</h6>
+        <h6>|</h6>
+        <h6><a class="pieIg ps-2" href="https://www.instagram.com/daniferraro.makeup/" target="_blank">Seguinos en Instagram<img class="iconoIg ps-2" src="../imagenes/instagram.svg" alt="instagram.com/daniferraro.makeup"></a></h6>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
