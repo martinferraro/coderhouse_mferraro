@@ -41,85 +41,113 @@
     </nav>
 
     <!-- CONTENIDO -->
-    <div class="row">
-        <!-- GALERIA -->
-        <div class="col-md-10 col-lg-6">
-            <div class="galeria card h-100 shadow">
-                <div class="card-header">
-                    <div class="row d-flex">
-                        <h3 class="txt-headerTarj text-white m-0 text-center">Trabajos de maquillaje</h3>
+    <main class="container-fluid h-100 my-2">
+        <div class="row h-100">
+            <!-- GALERIA -->
+            <div class="col-md-10 col-lg-6">
+                <div class="galeria card h-100 border-0 shadow">
+                    <div class="card-header">
+                        <div class="row d-flex">
+                            <h3 class="txt-headerTarj text-white m-0 text-center">Trabajos de maquillaje</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="row h-100">
-                    <div class="gal-img col-md-5 col-lg-4 d-flex flex-column justify-content-between">
-                        <img src="../imagenes/mkup01.jpeg" class="img-gal h-100 w-100 rounded img-thumbnail" alt="Trabajos realizados">
-                        <img src="../imagenes/mkup02.jpeg" class="img-gal h-100 w-100 rounded img-thumbnail" alt="Trabajos realizados">
-                    </div>
-                    <div class="gal-img col-md-3 col-lg-4 d-flex flex-column justify-content-between">
-                        <img src="../imagenes/mkup03.jpg" class="img-gal h-100 w-100 rounded img-thumbnail" alt="Trabajos realizados">
-                        <img src="../imagenes/mkup04.jpg" class="img-gal h-100 w-100 rounded img-thumbnail" alt="Trabajos realizados">
-                        <img src="../imagenes/mkup05.jpg" class="img-gal h-100 w-100 rounded img-thumbnail" alt="Trabajos realizados">
-                    </div>
-                    <div class="gal-img col-md-3 col-lg-4 d-flex flex-column justify-content-between">
-                        <img src="../imagenes/mkup06.jpg" class="img-gal h-100 w-100 rounded img-thumbnail" alt="Trabajos realizados">
-                        <img src="../imagenes/mkup07.jpg" class="img-gal h-100 w-100 rounded img-thumbnail" alt="Trabajos realizados">
-                        <img src="../imagenes/mkup08.jpg" class="img-gal h-100 w-100 rounded img-thumbnail" alt="Trabajos realizados">
+                    <!-- CAROUSEL IMAGENES -->
+                    <div class="carousel-img row container-fluid px-0 my-3">
+                        <div id="carouselControles" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item text-center active">
+                                    <img src="../imagenes/mkup01.jpeg" class="img-car rounded" alt="Trabajos realizados">
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <img src="../imagenes/mkup02.jpeg" class="img-car rounded" alt="Trabajos realizados">
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <img src="../imagenes/mkup03.jpg" class="img-car rounded" alt="Trabajos realizados">
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <img src="../imagenes/mkup04.jpg" class="img-car rounded" alt="Trabajos realizados">
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <img src="../imagenes/mkup05.jpg" class="img-car rounded" alt="Trabajos realizados">
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <img src="../imagenes/mkup06.jpg" class="img-car rounded" alt="Trabajos realizados">
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <img src="../imagenes/mkup07.jpg" class="img-car rounded" alt="Trabajos realizados">
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <img src="../imagenes/mkup08.jpg" class="img-car rounded" alt="Trabajos realizados">
+                                </div>
+                                <!-- BOTONES -->
+                                <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselControles" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carouselControles" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-10 col-lg-6 d-flex flex-column justify-content-between">
-            <!-- VIDEO -->
-            <div class="video card h-100 mb-3 shadow">
-                <div class="card-header">
-                    <div class="row d-flex">
-                        <h3 class="txt-headerTarj text-white m-0 text-center">Productos y talleres</h3>
+            <div class="col-md-10 col-lg-6 d-flex flex-column justify-content-between">
+                <!-- VIDEO -->
+                <div class="video card h-100 mb-3 border-0 shadow">
+                    <div class="card-header">
+                        <div class="row d-flex">
+                            <h3 class="txt-headerTarj text-white m-0 text-center">Productos y talleres</h3>
+                        </div>
+                    </div>
+                    <div class="row container-fluid p-0 my-3">
+                    <iframe height="265" src="https://www.youtube.com/embed/VoBC-6LSLMU" title="YouTube video player" frameborder="0"></iframe>
                     </div>
                 </div>
-                <div class="row container h-100 p-3">
-                <iframe height="265" src="https://www.youtube.com/embed/VoBC-6LSLMU" title="YouTube video player" frameborder="0"></iframe>
-                </div>
-            </div>
-            <!-- CAROUSEL TESTIMONIOS -->
-            <div class="testimonios card shadow">
-                <div class="card-header">
-                    <div class="row d-flex">
-                        <h3 class="txt-headerTarj text-white m-0 text-center">Testimonios de nuestras clientes</h3>
+                <!-- CAROUSEL TESTIMONIOS -->
+                <div class="testimonios card border-0 shadow">
+                    <div class="card-header">
+                        <div class="row d-flex">
+                            <h3 class="txt-testimoniosLargo txt-headerTarj text-white m-0 text-center">Testimonios de nuestras clientes</h3>
+                            <h3 class="txt-testimoniosCorto txt-headerTarj text-white m-0 text-center">Testimonios</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="row container d-flex">
-                    <div id="carouselControles" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner my-3">
-                            <div class="carousel-item text-center active">
-                                <h5 class="txt-carousel fw-bold">"Testimonio 1"</h5>
-                                <h5>Anabela Torres, 28 años, CABA</h5>
-                                <p>Maquillaje para casamiento</p>
+                    <div class="row container-fluid d-flex">
+                        <div id="carouselTestControles" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner my-3">
+                                <div class="carousel-item text-center active">
+                                    <h5 class="txt-carousel fw-bold">"Testimonio 1"</h5>
+                                    <h5>Anabela Torres, 28 años, CABA</h5>
+                                    <p>Maquillaje para casamiento</p>
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <h5 class="txt-carousel fw-bold">"Testimonio 2"</h5>
+                                    <h5>Marta Galindez, 44 años, CABA</h5>
+                                    <p>Taller de maquillaje</p>
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <h5 class="txt-carousel fw-bold">"Testimonio 3"</h5>
+                                    <h5>Morita Fernandez, 57 años, CABA</h5>
+                                    <p>Tratamiento facial</p>
+                                </div>
+                                <!-- BOTONES -->
+                                <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselTestControles" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carouselTestControles" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
                             </div>
-                            <div class="carousel-item text-center">
-                                <h5 class="txt-carousel fw-bold">"Testimonio 2"</h5>
-                                <h5>Marta Galindez, 44 años, CABA</h5>
-                                <p>Taller de maquillaje</p>
-                            </div>
-                            <div class="carousel-item text-center">
-                                <h5 class="txt-carousel fw-bold">"Testimonio 3"</h5>
-                                <h5>Morita Fernandez, 57 años, CABA</h5>
-                                <p>Tratamiento facial</p>
-                            </div>
-                            <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselControles" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carouselControles" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <!-- PIE -->
     <footer class="pie container-fluid">

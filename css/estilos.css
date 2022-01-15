@@ -201,7 +201,7 @@ h6 {
 .card {
     border-radius: 1rem;
 }
-.card-header {
+.card-header, .card-header-hor {
     background-color:#cc8db4;
     border: 0;
 }
@@ -209,12 +209,12 @@ h6 {
     font-size: 1rem;
 }
 .card-header:first-child {
-    border-radius: 1rem 1rem 0 0;
+    border-radius: .8rem .8rem 0 0;
+    margin: 0;
 }
 .card-img-top {
     height: 15rem;
     object-fit: cover;
-    border-radius: 0 0 0 4rem;
 }
 .tarj-maquillaje {
     animation: fadein1 1.3s
@@ -271,10 +271,26 @@ h6 {
 /* PORTFOLIO */
 .txt-carousel {
     font-size: 1.2rem;
+    padding-bottom: .5rem;
 }
-.img-gal {
-    margin: .25rem;
+.txt-testimoniosCorto {
+    display: none;
+}
+.img-car {
     object-fit: cover;
+    width: 100%;
+    height: 26rem;
+}
+.carousel-img {
+    height: 100%;
+    display: flex;
+    align-content: center;
+}
+.carousel-control-next, .carousel-control-prev {
+    justify-content: none;
+    width: auto;
+    background-color: #fcf9fb;
+    background-blend-mode: soft-light;
 }
 .carousel-item p, .carousel-item h5 {
     margin: 0;
@@ -293,6 +309,37 @@ h6 {
 }
 
 /* BIOGRAFIA */
+.card-header-hor {
+    border-radius: .8rem 0 0 .8rem;
+    margin: 0;
+    padding: 0;
+}
+.colTarjBio {
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    justify-content: space-between;
+}
+.imgBio {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    animation: fadeinImg 3s;
+}
+@keyframes fadeinImg {
+    0% {
+        opacity: 0;
+    }
+}
+.tarjBio1 {
+    animation: fadein1 1.3s;
+}
+.tarjBio2 {
+    animation: fadein2 1.3s;
+}
+.tarjBio3 {
+    animation: fadein3 1.3s;
+}
 
 /* CONTACTO */
 input[type=text], input[type=email], input[type=number], input[type=tel], textarea[type=text] {
@@ -357,8 +404,6 @@ div.telefono.container.col-lg-6 {
     }
     .card-img-top {
         height: 18rem;
-        padding: 0;
-        border-radius: 0 0 0 1rem;
     }
     .cont-iconos hr {
         display: none;
@@ -378,6 +423,9 @@ div.telefono.container.col-lg-6 {
     .telefono {
         padding-left: 0;
     }
+    .colTarjBio {
+        height: 35rem;
+    }
 }
 @media only screen and (max-width: 786px) {
     .card-img-top {
@@ -386,6 +434,9 @@ div.telefono.container.col-lg-6 {
     .gal-img img {
         max-height: 12rem;
     }
+    .card-header-hor {
+        display: none;
+    }
 }
 @media only screen and (max-width: 540px) {
     .cont-imgLat {
@@ -393,10 +444,22 @@ div.telefono.container.col-lg-6 {
     }
     .card-img-top {
         height: 8rem;
-        padding: 0;
-        border-radius: 0;
     }
     .txt-contacto {
+        display: none;
+    }
+    .img-car {
+        object-fit: cover;
+        width: 100%;
+        height: 15rem;
+    }
+    .txt-testimoniosCorto {
+        display: block;
+    }
+    .txt-testimoniosLargo {
+        display: none;
+    }
+    .imgBio {
         display: none;
     }
 }
