@@ -1,0 +1,28 @@
+/* PIE DE PAGINA */
+
+.pie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $fondo-head-foot;
+    padding: 1rem;
+    z-index: 1;
+
+        h5 {
+            margin: 0;
+        }
+
+        h6 {
+            margin: 0;
+            }
+}
+
+.pieIg {
+display: flex;
+align-items: center;
+}
+
+.ico-pie {
+    font-size: 1rem!important;
+    color: $font-claro!important;
+}

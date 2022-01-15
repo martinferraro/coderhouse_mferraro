@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import "general";
+@import "header";
+@import "footer";
+
+/* CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* GENERAL */
+body {
+min-height: 100vh;
+font-family: "DM+Sans", sans-serif;
+background-color: $fondo-gral;
+background-image: url(/imagenes/fondo_ondas.svg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100%;
+}
+
+.row {
+> * {
+    margin-top: 0;
+}
+
+margin: 0;
+justify-content: center;
+}
+
+.container {
+padding: 0;
+}
+
+.txt-headerTarj {
+font-size: 1rem;
+letter-spacing: .1rem;
+}
+
+/* TIPOGRAFIAS */
+
+li, a, h6 {
+color: $font-claro;
+text-decoration: none;
+}
+
+h5 {
+color: $font-gris;
+text-decoration: none;
+font-size: 1rem;
+}
+
+p {
+color: $font-gris;
+text-decoration: none;
+font-size: .9rem;
+}
+
+h3 {
+font-weight: bold;
+color: $col-intenso;
+font-size: 1.4rem;
+}
+
+h6 {
+font-size: .8rem;
+}
+
+/* BOTONES */
+
+.btn-primary {
+color: $font-claro;
+background-color: $fondo-btn;
+border-style: none;
+}
+
+.btn-check {
+&:active + .btn-primary, &:checked + .btn-primary {
+    color: $font-claro;
+    background-color: $fondo-btn;
+}
+}
+.btn-primary {
+&.active, &:active {
+    color: $font-claro;
+    background-color: $fondo-btn;
+}
+}
+
+.btn-primary.dropdown-toggle {
+color: $font-claro;
+background-color: $fondo-btn;
+}
+
+.btn-primary:hover {
+color: $font-claro;
+background-color: $col-intenso;
+transform: scale(1.1);
+}
+  
+/* MAIN PORTADA */
+
+.cont-index {
+  max-width: 1080px;
+}
+
+.contPpalTxt div {
+  padding: 2%;
+
+  img {
+    animation: escala 5s;
+  }
+}
+
+@keyframes escala {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Imagen portada c/ hover overlay */
+
+.img-lat {
+  position: relative;
+  object-fit: cover;
+}
+
+.imgIndex {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  animation: bordes 6s infinite;
+}
+
+@keyframes bordes {
+  0% {
+    border-radius: 8vw 0 8vw 0;
+  }
+
+  20% {
+    border-radius: 8vw 0 8vw 0;
+  }
+
+  30% {
+    border-radius: 0;
+  }
+
+  40% {
+    border-radius: 0 8vw 0 8vw;
+  }
+
+  70% {
+    border-radius: 0 8vw 0 8vw;
+  }
+
+  80% {
+    border-radius: 0;
+  }
+
+  100% {
+    border-radius: 8vw 0 8vw 0;
+  }
+}
+
+.btn-img {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.img-lat:hover {
+  .imgIndex {
+    opacity: 0.5;
+  }
+
+  .btn-img {
+    opacity: 1;
+  }
+}
+
+/* SERVICIOS */
+
+.card {
+  border-radius: 1rem;
+}
+
+.card-header, .card-header-hor {
+  background-color: $fondo-enc;
+  border: 0;
+}
+
+.txt-servicios {
+  font-size: 1rem;
+}
+
+.card-header:first-child {
+  border-radius: .8rem .8rem 0 0;
+  margin: 0;
+}
+
+.card-img-top {
+  height: 15rem;
+  object-fit: cover;
+}
+
+.tarj-maquillaje {
+  animation: fadein1 1.3s;
+
+  &:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+}
+
+.tarj-skin {
+  animation: fadein2 1.3s;
+
+  &:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+}
+
+.tarj-talleres {
+  animation: fadein3 1.3s;
+
+  &:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+}
+
+@keyframes fadein1 {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein2 {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 0;
+  }
+
+  66% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein3 {
+  0% {
+    opacity: 0;
+  }
+
+  66% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* PORTFOLIO */
+
+.txt-carousel {
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
+}
+
+.txt-testimoniosCorto {
+  display: none;
+}
+
+.img-car {
+  object-fit: cover;
+  width: 100%;
+  height: 26rem;
+}
+
+.carousel-img {
+  height: 100%;
+  display: flex;
+  align-content: center;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  justify-content: none;
+  width: auto;
+  background-color: $font-claro;
+  background-blend-mode: soft-light;
+}
+
+.carousel-item {
+  p, h5 {
+    margin: 0;
+  }
+}
+
+.galeria {
+  animation: fadein1 1.3s;
+}
+
+.video {
+  animation: fadein2 1.3s;
+}
+
+.testimonios {
+  animation: fadein3 1.3s;
+}
+
+.gal-img, .gal-img2 {
+  align-items: center;
+}
+
+/* BIOGRAFIA */
+
+.card-header-hor {
+  border-radius: .8rem 0 0 .8rem;
+  margin: 0;
+  padding: 0;
+}
+
+.colTarjBio {
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+  justify-content: space-between;
+}
+
+.imgBio {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  animation: fadeinImg 3s;
+}
+
+@keyframes fadeinImg {
+  0% {
+    opacity: 0;
+  }
+}
+
+.tarjBio1 {
+  animation: fadein1 1.3s;
+}
+
+.tarjBio2 {
+  animation: fadein2 1.3s;
+}
+
+.tarjBio3 {
+  animation: fadein3 1.3s;
+}
+
+/* CONTACTO */
+
+input {
+  &[type=text], &[type=email], &[type=number], &[type=tel] {
+    border: 1px solid $col-intenso;
+  }
+  &:hover {
+    background-color: $font-claro;
+  }
+}
+
+textarea[type=text] {
+  border: 1px solid $col-intenso;
+  &:hover {
+    background-color: $font-claro;
+  }
+}
+
+label {
+  padding: .5rem 0 .25rem 0;
+}
+
+.img-contacto {
+  width: 25rem;
+}
+
+.txt-contactoEnc {
+  text-align: end;
+}
+
+.bi {
+  font-size: 1.8rem;
+  color: $fondo-btn;
+}
+
+.tel-tarjeta {
+  font-size: 1.2rem;
+}
+
+.formulario {
+  animation: pop .25s;
+}
+
+.email {
+  padding-right: .5rem;
+}
+
+div.email.container.col-lg-6 {
+  margin: 0;
+}
+
+.telefono {
+  padding-left: .5rem;
+}
+
+div.telefono.container.col-lg-6 {
+  margin: 0;
+}
+
+@keyframes pop {
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 912px) {
+  body {
+    background-repeat: repeat-y;
+  }
+
+  .row > * {
+    margin: .5rem;
+  }
+
+  .imgIndex {
+    opacity: .5;
+  }
+
+  .btn-img {
+    opacity: 1;
+  }
+
+  .card-img-top {
+    height: 18rem;
+  }
+
+  .cont-iconos hr, .img-contacto {
+    display: none;
+  }
+
+  .tarjeta-iconos {
+    margin-top: 0 !important;
+  }
+
+  .ms-auto {
+    margin: 0 !important;
+  }
+
+  .email {
+    padding-right: 0;
+  }
+
+  .telefono {
+    padding-left: 0;
+  }
+
+  .colTarjBio {
+    height: 35rem;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .card-img-top {
+    height: 14rem;
+  }
+
+  .gal-img img {
+    max-height: 12rem;
+  }
+
+  .card-header-hor {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .cont-imgLat {
+    display: none;
+  }
+
+  .card-img-top {
+    height: 8rem;
+  }
+
+  .txt-contacto {
+    display: none;
+  }
+
+  .img-car {
+    object-fit: cover;
+    width: 100%;
+    height: 15rem;
+  }
+
+  .txt-testimoniosCorto {
+    display: block;
+  }
+
+  .txt-testimoniosLargo, .imgBio {
+    display: none;
+  }
+}

@@ -1,0 +1,37 @@
+/* BARRA NAVEGACION */
+.navbar {
+    padding: 0;
+    background-color: $fondo-head-foot;
+    z-index: 1;
+    }
+    
+    .collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    }
+    
+    .navbar > .container-fluid {
+    padding: 0;
+    }
+    
+    .navbar-toggler {
+    color: $font-claro;
+    border-style: none;
+    }
+    
+    .nav-link:hover {
+    background-color: $col-intenso;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+    color: $font-claro;
+        
+        &:hover {
+            color: $font-claro;
+        }
+    }
+    
+    .img-enc {
+    height: 30px;
+    }
+    
