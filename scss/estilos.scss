@@ -34,67 +34,33 @@ padding: 0;
 }
 
 .txt-headerTarj {
-font-size: 1rem;
 letter-spacing: .1rem;
-}
-
-/* TIPOGRAFIAS */
-
-li, a, h6 {
-color: $font-claro;
-text-decoration: none;
-}
-
-h5 {
-color: $font-gris;
-text-decoration: none;
-font-size: 1rem;
-}
-
-p {
-color: $font-gris;
-text-decoration: none;
-font-size: .9rem;
-}
-
-h3 {
 font-weight: bold;
-color: $col-intenso;
-font-size: 1.4rem;
-}
-
-h6 {
-font-size: .8rem;
 }
 
 /* BOTONES */
 
 .btn-primary {
-color: $font-claro;
 background-color: $fondo-btn;
 border-style: none;
 }
 
 .btn-check {
 &:active + .btn-primary, &:checked + .btn-primary {
-    color: $font-claro;
     background-color: $fondo-btn;
 }
 }
 .btn-primary {
 &.active, &:active {
-    color: $font-claro;
     background-color: $fondo-btn;
 }
 }
 
 .btn-primary.dropdown-toggle {
-color: $font-claro;
 background-color: $fondo-btn;
 }
 
 .btn-primary:hover {
-color: $font-claro;
 background-color: $col-intenso;
 transform: scale(1.1);
 }
@@ -102,7 +68,7 @@ transform: scale(1.1);
 /* MAIN PORTADA */
 
 .cont-index {
-  max-width: 1080px;
+  max-width: 1000px;
 }
 
 .contPpalTxt div {
@@ -206,10 +172,6 @@ transform: scale(1.1);
   border: 0;
 }
 
-.txt-servicios {
-  font-size: 1rem;
-}
-
 .card-header:first-child {
   border-radius: .8rem .8rem 0 0;
   margin: 0;
@@ -287,11 +249,6 @@ transform: scale(1.1);
 
 /* PORTFOLIO */
 
-.txt-carousel {
-  font-size: 1.2rem;
-  padding-bottom: .5rem;
-}
-
 .txt-testimoniosCorto {
   display: none;
 }
@@ -299,7 +256,7 @@ transform: scale(1.1);
 .img-car {
   object-fit: cover;
   width: 100%;
-  height: 26rem;
+  height: 25rem;
 }
 
 .carousel-img {

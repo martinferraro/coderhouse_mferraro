@@ -1,0 +1,57 @@
+/* COLORES */
+$fondo-head-foot: #8fa8c2;
+$fondo-gral: #fcf9fb;
+$fondo-enc: #cc8db4;
+$fondo-btn: #cc8db4;
+$col-intenso:#ce4e9d;
+$font-claro: #fcf9fb;
+$font-gris:#646464;
+
+/* TIPOGRAFIAS */
+
+$tamtipo: (
+    h1: 1.8rem,
+    h2: 1.6rem,
+    h3: 1.4rem,
+    h4: 1.2rem,
+    h5: 1rem,
+    h6: .8rem,
+    p: .9rem,
+    li: 1rem,
+    a: .9rem,
+);
+
+@each $tipo, $altura in $tamtipo {
+    #{$tipo} {
+        font-size: $altura;
+    }
+}
+
+$colortipo: (
+    h1: $col-intenso,
+    h2: $col-intenso,
+    h3: $col-intenso,
+    h4: $font-gris,
+    h5: $font-gris,
+    h6: $font-claro,
+    p: $font-gris,
+    li: $font-claro,
+    a: $font-claro,
+);
+
+@each $tipo, $color in $colortipo {
+    #{$tipo} {
+        color: $color;
+    }
+}
+
+li, a, h6 {
+    text-decoration: none;
+    &:hover {
+        color: $font-claro;
+    }
+}
+
+h3 {
+    font-weight: bold;
+}

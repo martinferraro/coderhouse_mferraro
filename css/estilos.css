@@ -1,8 +1,94 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+/* COLORES */
+/* TIPOGRAFIAS */
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+li {
+  font-size: 1rem;
+}
+
+a {
+  font-size: 0.9rem;
+}
+
+h1 {
+  color: #ce4e9d;
+}
+
+h2 {
+  color: #ce4e9d;
+}
+
+h3 {
+  color: #ce4e9d;
+}
+
+h4 {
+  color: #646464;
+}
+
+h5 {
+  color: #646464;
+}
+
+h6 {
+  color: #fcf9fb;
+}
+
+p {
+  color: #646464;
+}
+
+li {
+  color: #fcf9fb;
+}
+
+a {
+  color: #fcf9fb;
+}
+
+li, a, h6 {
+  text-decoration: none;
+}
+
+li:hover, a:hover, h6:hover {
+  color: #fcf9fb;
+}
+
+h3 {
+  font-weight: bold;
+}
+
 /* BARRA NAVEGACION */
 .navbar {
   padding: 0;
-  background-color: #adb5bd;
+  background-color: #8fa8c2;
   z-index: 1;
 }
 
@@ -50,7 +136,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #adb5bd;
+  background-color: #8fa8c2;
   padding: 1rem;
   z-index: 1;
 }
@@ -70,6 +156,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 0.8rem !important;
 }
 
 .ico-pie {
@@ -110,62 +197,29 @@ body {
 }
 
 .txt-headerTarj {
-  font-size: 1rem;
   letter-spacing: .1rem;
-}
-
-/* TIPOGRAFIAS */
-li, a, h6 {
-  color: #fcf9fb;
-  text-decoration: none;
-}
-
-h5 {
-  color: #646464;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-p {
-  color: #646464;
-  text-decoration: none;
-  font-size: .9rem;
-}
-
-h3 {
   font-weight: bold;
-  color: #ce4e9d;
-  font-size: 1.4rem;
-}
-
-h6 {
-  font-size: .8rem;
 }
 
 /* BOTONES */
 .btn-primary {
-  color: #fcf9fb;
   background-color: #cc8db4;
   border-style: none;
 }
 
 .btn-check:active + .btn-primary, .btn-check:checked + .btn-primary {
-  color: #fcf9fb;
   background-color: #cc8db4;
 }
 
 .btn-primary.active, .btn-primary:active {
-  color: #fcf9fb;
   background-color: #cc8db4;
 }
 
 .btn-primary.dropdown-toggle {
-  color: #fcf9fb;
   background-color: #cc8db4;
 }
 
 .btn-primary:hover {
-  color: #fcf9fb;
   background-color: #ce4e9d;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -173,7 +227,7 @@ h6 {
 
 /* MAIN PORTADA */
 .cont-index {
-  max-width: 1080px;
+  max-width: 1000px;
 }
 
 .contPpalTxt div {
@@ -314,10 +368,6 @@ h6 {
   border: 0;
 }
 
-.txt-servicios {
-  font-size: 1rem;
-}
-
 .card-header:first-child {
   border-radius: .8rem .8rem 0 0;
   margin: 0;
@@ -429,11 +479,6 @@ h6 {
 }
 
 /* PORTFOLIO */
-.txt-carousel {
-  font-size: 1.2rem;
-  padding-bottom: .5rem;
-}
-
 .txt-testimoniosCorto {
   display: none;
 }
@@ -442,7 +487,7 @@ h6 {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 26rem;
+  height: 25rem;
 }
 
 .carousel-img {
