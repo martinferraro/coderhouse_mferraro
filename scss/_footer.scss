@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $fondo-head-foot;
+    background-color: $headfoot;
     padding: 1rem;
     z-index: 1;
 
@@ -25,5 +25,5 @@ font-size: .8rem!important;
 
 .ico-pie {
     font-size: 1rem!important;
-    color: $font-claro!important;
+    color: $claro!important;
 }

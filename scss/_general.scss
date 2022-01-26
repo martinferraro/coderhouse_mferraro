@@ -1,11 +1,11 @@
 /* COLORES */
-$fondo-head-foot: #8fa8c2;
-$fondo-gral: #fcf9fb;
-$fondo-enc: #cc8db4;
-$fondo-btn: #cc8db4;
-$col-intenso:#ce4e9d;
-$font-claro: #fcf9fb;
-$font-gris:#646464;
+$headfoot:#8fa8c2;
+$gral: #fcf9fb;
+$enc: #cc8db4;
+$btn: #cc8db4;
+$intenso:#ce4e9d;
+$claro: #fcf9fb;
+$gris:#646464;
 
 /* TIPOGRAFIAS */
 
@@ -28,15 +28,15 @@ $tamtipo: (
 }
 
 $colortipo: (
-    h1: $col-intenso,
-    h2: $col-intenso,
-    h3: $col-intenso,
-    h4: $font-gris,
-    h5: $font-gris,
-    h6: $font-claro,
-    p: $font-gris,
-    li: $font-claro,
-    a: $font-claro,
+    h1: $intenso,
+    h2: $intenso,
+    h3: $intenso,
+    h4: $gris,
+    h5: $gris,
+    h6: $claro,
+    p: $gris,
+    li: $claro,
+    a: $claro,
 );
 
 @each $tipo, $color in $colortipo {
@@ -48,7 +48,7 @@ $colortipo: (
 li, a, h6 {
     text-decoration: none;
     &:hover {
-        color: $font-claro;
+        color: $claro;
     }
 }
 

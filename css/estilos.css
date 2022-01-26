@@ -540,6 +540,10 @@ body {
   padding: 0;
 }
 
+.tarjBio1 h5, .tarjBio2 h5, .tarjBio3 h5 {
+  color: #ce4e9d;
+}
+
 .colTarjBio {
   display: -webkit-box;
   display: -ms-flexbox;

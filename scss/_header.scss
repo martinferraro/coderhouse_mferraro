@@ -1,7 +1,7 @@
 /* BARRA NAVEGACION */
 .navbar {
     padding: 0;
-    background-color: $fondo-head-foot;
+    background-color: $headfoot;
     z-index: 1;
     }
     
@@ -15,19 +15,19 @@
     }
     
     .navbar-toggler {
-    color: $font-claro;
+    color: $claro;
     border-style: none;
     }
     
     .nav-link:hover {
-    background-color: $col-intenso;
+    background-color: $intenso;
     }
     
     .navbar-light .navbar-nav .nav-link {
-    color: $font-claro;
+    color: $claro;
         
         &:hover {
-            color: $font-claro;
+            color: $claro;
         }
     }
     

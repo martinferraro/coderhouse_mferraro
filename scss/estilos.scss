@@ -13,7 +13,7 @@
 body {
 min-height: 100vh;
 font-family: "DM+Sans", sans-serif;
-background-color: $fondo-gral;
+background-color: $gral;
 background-image: url(/imagenes/fondo_ondas.svg);
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -41,27 +41,27 @@ font-weight: bold;
 /* BOTONES */
 
 .btn-primary {
-background-color: $fondo-btn;
+background-color: $btn;
 border-style: none;
 }
 
 .btn-check {
 &:active + .btn-primary, &:checked + .btn-primary {
-    background-color: $fondo-btn;
+    background-color: $btn;
 }
 }
 .btn-primary {
 &.active, &:active {
-    background-color: $fondo-btn;
+    background-color: $btn;
 }
 }
 
 .btn-primary.dropdown-toggle {
-background-color: $fondo-btn;
+background-color: $btn;
 }
 
 .btn-primary:hover {
-background-color: $col-intenso;
+background-color: $intenso;
 transform: scale(1.1);
 }
   
@@ -155,7 +155,6 @@ transform: scale(1.1);
   .imgIndex {
     opacity: 0.5;
   }
-
   .btn-img {
     opacity: 1;
   }
@@ -168,7 +167,7 @@ transform: scale(1.1);
 }
 
 .card-header, .card-header-hor {
-  background-color: $fondo-enc;
+  background-color: $enc;
   border: 0;
 }
 
@@ -268,7 +267,7 @@ transform: scale(1.1);
 .carousel-control-next, .carousel-control-prev {
   justify-content: none;
   width: auto;
-  background-color: $font-claro;
+  background-color: $claro;
   background-blend-mode: soft-light;
 }
 
@@ -300,6 +299,12 @@ transform: scale(1.1);
   border-radius: .8rem 0 0 .8rem;
   margin: 0;
   padding: 0;
+}
+
+.tarjBio1, .tarjBio2, .tarjBio3 {
+  h5 {
+    color: $intenso;
+  }
 }
 
 .colTarjBio {
@@ -338,17 +343,17 @@ transform: scale(1.1);
 
 input {
   &[type=text], &[type=email], &[type=number], &[type=tel] {
-    border: 1px solid $col-intenso;
+    border: 1px solid $intenso;
   }
   &:hover {
-    background-color: $font-claro;
+    background-color: $claro;
   }
 }
 
 textarea[type=text] {
-  border: 1px solid $col-intenso;
+  border: 1px solid $intenso;
   &:hover {
-    background-color: $font-claro;
+    background-color: $claro;
   }
 }
 
@@ -366,7 +371,7 @@ label {
 
 .bi {
   font-size: 1.8rem;
-  color: $fondo-btn;
+  color: $btn;
 }
 
 .tel-tarjeta {
