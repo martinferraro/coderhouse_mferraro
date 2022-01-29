@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
-@import "general";
-@import "header";
-@import "footer";
+@import "general", "header", "footer";
 
 /* CSS RESET */
 * {
@@ -24,7 +22,6 @@ background-size: 100%;
 > * {
     margin-top: 0;
 }
-
 margin: 0;
 justify-content: center;
 }
@@ -36,6 +33,7 @@ padding: 0;
 .txt-headerTarj {
 letter-spacing: .1rem;
 font-weight: bold;
+color: $intenso;
 }
 
 /* BOTONES */

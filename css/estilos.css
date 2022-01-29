@@ -1,31 +1,36 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
-/* COLORES */
 /* TIPOGRAFIAS */
+/* El tamaño de las h es una función lineal decreciente */
 h1 {
-  font-size: 1.8rem;
-}
-
-h2 {
   font-size: 1.6rem;
 }
 
-h3 {
+h2 {
   font-size: 1.4rem;
 }
 
-h4 {
+h3 {
   font-size: 1.2rem;
 }
 
-h5 {
+h4 {
   font-size: 1rem;
 }
 
-h6 {
+h5 {
   font-size: 0.8rem;
 }
 
+h6 {
+  font-size: 0.6rem;
+}
+
 p {
+  font-size: 0.9rem;
+}
+
+em {
   font-size: 0.9rem;
 }
 
@@ -46,7 +51,7 @@ h2 {
 }
 
 h3 {
-  color: #ce4e9d;
+  color: #646464;
 }
 
 h4 {
@@ -54,7 +59,7 @@ h4 {
 }
 
 h5 {
-  color: #646464;
+  color: #fcf9fb;
 }
 
 h6 {
@@ -62,6 +67,10 @@ h6 {
 }
 
 p {
+  color: #646464;
+}
+
+em {
   color: #646464;
 }
 
@@ -81,7 +90,7 @@ li:hover, a:hover, h6:hover {
   color: #fcf9fb;
 }
 
-h3 {
+h1 {
   font-weight: bold;
 }
 
@@ -137,7 +146,7 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   background-color: #8fa8c2;
-  padding: 1rem;
+  padding: .6rem;
   z-index: 1;
 }
 
@@ -199,6 +208,7 @@ body {
 .txt-headerTarj {
   letter-spacing: .1rem;
   font-weight: bold;
+  color: #ce4e9d;
 }
 
 /* BOTONES */

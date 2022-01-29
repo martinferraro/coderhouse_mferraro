@@ -3,35 +3,34 @@
     padding: 0;
     background-color: $headfoot;
     z-index: 1;
-    }
-    
-    .collapse {
+}
+
+.collapse {
     flex-basis: 100%;
     flex-grow: 0;
-    }
-    
-    .navbar > .container-fluid {
+}
+
+.navbar > .container-fluid {
     padding: 0;
-    }
-    
-    .navbar-toggler {
+}
+
+.navbar-toggler {
     color: $claro;
     border-style: none;
-    }
-    
-    .nav-link:hover {
+}
+
+.nav-link:hover {
     background-color: $intenso;
-    }
-    
-    .navbar-light .navbar-nav .nav-link {
+}
+
+.navbar-light .navbar-nav .nav-link {
     color: $claro;
         
         &:hover {
             color: $claro;
         }
-    }
-    
-    .img-enc {
+}
+
+.img-enc {
     height: 30px;
-    }
-    
+}

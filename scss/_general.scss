@@ -1,45 +1,49 @@
-/* COLORES */
 $headfoot:#8fa8c2;
 $gral: #fcf9fb;
 $enc: #cc8db4;
-$btn: #cc8db4;
+$btn: $enc;
 $intenso:#ce4e9d;
 $claro: #fcf9fb;
 $gris:#646464;
 
 /* TIPOGRAFIAS */
+/* El tamaño de las h es una función lineal decreciente */
+$tamInic: 1.8rem;
+$tamVar: -.2;
 
-$tamtipo: (
-    h1: 1.8rem,
-    h2: 1.6rem,
-    h3: 1.4rem,
-    h4: 1.2rem,
-    h5: 1rem,
-    h6: .8rem,
+@for $tamTipoH from 1 to 7 {
+    h#{$tamTipoH} {
+        font-size: $tamVar * $tamTipoH + $tamInic;
+    }
+}
+
+$tamTipo: (
     p: .9rem,
+    em: .9rem,
     li: 1rem,
     a: .9rem,
 );
 
-@each $tipo, $altura in $tamtipo {
+@each $tipo, $altura in $tamTipo {
     #{$tipo} {
         font-size: $altura;
     }
 }
 
-$colortipo: (
+$colorTipo: (
     h1: $intenso,
     h2: $intenso,
-    h3: $intenso,
+    h3: $gris,
     h4: $gris,
-    h5: $gris,
+    h5: $claro,
     h6: $claro,
     p: $gris,
+    em: $gris,
     li: $claro,
     a: $claro,
 );
 
-@each $tipo, $color in $colortipo {
+@each $tipo, $color in $colorTipo {
     #{$tipo} {
         color: $color;
     }
@@ -52,6 +56,6 @@ li, a, h6 {
     }
 }
 
-h3 {
+h1 {
     font-weight: bold;
 }
