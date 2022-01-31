@@ -6,6 +6,13 @@ $intenso:#ce4e9d;
 $claro: #fcf9fb;
 $gris:#646464;
 
+@mixin flex-col-center-sb {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+
 /* TIPOGRAFIAS */
 /* El tamaño de las h es una función lineal decreciente */
 $tamInic: 1.8rem;
@@ -52,7 +59,7 @@ $colorTipo: (
 li, a, h6 {
     text-decoration: none;
     &:hover {
-        color: $claro;
+        color: map-get($colorTipo, li);
     }
 }
 

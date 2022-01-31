@@ -16,6 +16,7 @@ background-image: url(/imagenes/fondo_ondas.svg);
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: 100%;
+@include flex-col-center-sb;
 }
 
 .row {
@@ -45,17 +46,17 @@ border-style: none;
 
 .btn-check {
 &:active + .btn-primary, &:checked + .btn-primary {
-    background-color: $btn;
+  @extend .btn-primary;
 }
 }
 .btn-primary {
 &.active, &:active {
-    background-color: $btn;
+  @extend .btn-primary;
 }
 }
 
 .btn-primary.dropdown-toggle {
-background-color: $btn;
+  @extend .btn-primary;
 }
 
 .btn-primary:hover {
@@ -256,12 +257,6 @@ transform: scale(1.1);
   height: 25rem;
 }
 
-.carousel-img {
-  height: 100%;
-  display: flex;
-  align-content: center;
-}
-
 .carousel-control-next, .carousel-control-prev {
   justify-content: none;
   width: auto;
@@ -279,16 +274,16 @@ transform: scale(1.1);
   animation: fadein1 1.3s;
 }
 
+.portfolioVidTest {
+  @include flex-col-center-sb;
+}
+
 .video {
   animation: fadein2 1.3s;
 }
 
 .testimonios {
   animation: fadein3 1.3s;
-}
-
-.gal-img, .gal-img2 {
-  align-items: center;
 }
 
 /* BIOGRAFIA */
@@ -306,10 +301,8 @@ transform: scale(1.1);
 }
 
 .colTarjBio {
-  display: flex;
-  flex-direction: column;
+  @include flex-col-center-sb;
   height: 30rem;
-  justify-content: space-between;
 }
 
 .imgBio {
