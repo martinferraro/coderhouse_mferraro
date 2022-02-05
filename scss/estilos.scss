@@ -162,7 +162,11 @@ transform: scale(1.1);
 /* SERVICIOS */
 
 .card {
-  border-radius: 1rem;
+  border-radius: $radio;
+}
+
+.card-body {
+  padding: 0 1rem 1rem 1rem;
 }
 
 .card-header, .card-header-hor {
@@ -171,7 +175,7 @@ transform: scale(1.1);
 }
 
 .card-header:first-child {
-  border-radius: .8rem .8rem 0 0;
+  border-radius: $radio $radio 0 0;
   margin: 0;
 }
 
@@ -185,7 +189,6 @@ transform: scale(1.1);
 
   &:hover {
     transform: scale(1.02);
-    cursor: pointer;
   }
 }
 
@@ -194,7 +197,6 @@ transform: scale(1.1);
 
   &:hover {
     transform: scale(1.02);
-    cursor: pointer;
   }
 }
 
@@ -203,7 +205,6 @@ transform: scale(1.1);
 
   &:hover {
     transform: scale(1.02);
-    cursor: pointer;
   }
 }
 
@@ -289,7 +290,7 @@ transform: scale(1.1);
 /* BIOGRAFIA */
 
 .card-header-hor {
-  border-radius: .8rem 0 0 .8rem;
+  border-radius: $radio 0 0 $radio;
   margin: 0;
   padding: 0;
 }
@@ -308,8 +309,8 @@ transform: scale(1.1);
 .imgBio {
   width: 100%;
   height: auto;
-  border-radius: 1rem;
-  animation: fadeinImg 3s;
+  border-radius: $radio;
+  animation: fadeinImg 3.2s;
 }
 
 @keyframes fadeinImg {

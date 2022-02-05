@@ -20,15 +20,15 @@
     border-style: none;
 }
 
-.nav-link:hover {
-    background-color: $intenso;
-}
-
 .navbar-light .navbar-nav .nav-link {
     color: $claro;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-align: end;
         
         &:hover {
             color: $claro;
+            background-color: $intenso;
         }
 }
 
