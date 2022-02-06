@@ -405,22 +405,22 @@ body {
      object-fit: cover;
 }
 
-.tarj-maquillaje {
+.tarjMaquillaje {
   -webkit-animation: fadein1 1.3s;
           animation: fadein1 1.3s;
 }
 
-.tarj-skin {
+.tarjSkin {
   -webkit-animation: fadein2 1.3s;
           animation: fadein2 1.3s;
 }
 
-.tarj-talleres {
+.tarjTalleres {
   -webkit-animation: fadein3 1.3s;
           animation: fadein3 1.3s;
 }
 
-.tarj-maquillaje:hover, .tarj-skin:hover, .tarj-talleres:hover {
+.tarjMaquillaje:hover, .tarjSkin:hover, .tarjTalleres:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
@@ -743,6 +743,9 @@ div.email.container.col-lg-6, div.telefono.container.col-lg-6 {
   }
   fieldset {
     padding-top: .5rem;
+  }
+  .contImgLat {
+    padding: 0 0 1.5rem 0;
   }
 }
 
