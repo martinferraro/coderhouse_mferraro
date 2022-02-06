@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
-<body>
+<body class="flex-column justify-content-between">
     <!-- BARRA NAVEGACIÓN -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container-fluid">
@@ -24,19 +24,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="../index.html"><i class="bi bi-house me-2"></i>Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../paginas/servicios.html">Servicios</a>
+                        <a class="nav-link" href="../paginas/servicios.html"><i class="bi bi-brush me-2"></i></i>Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../paginas/portfolio.html">Portfolio</a>
+                        <a class="nav-link" href="../paginas/portfolio.html"><i class="bi bi-book me-2"></i>Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../paginas/biografia.html">Biografía</a>
+                        <a class="nav-link" href="../paginas/biografia.html"><i class="bi bi-person-circle me-2"></i>Biografía</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                        <a class="nav-link" href="../paginas/contacto.html"><i class="bi bi-envelope me-2"></i>Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -44,44 +44,54 @@
     </nav>
 
     <!-- CONTENIDO -->
-    <main class="container-fluid h-100">
-        <div class="row align-items-center h-100 d-flex flex-row justify-content-evenly">
-            <!-- COLUMNA TARJETAS TEXTOS -->
-            <div class="colTarjBio col-md-12 col-lg-6 py-3">
-                <div class="tarjBio1 card p-0 border-0 shadow">
-                    <div class="row h-100 p-0">
-                        <div class="card-header-hor col-md-1"></div>
-                        <div class="col-md-11 m-0 p-2">
-                            <h3 class="txt-bio txt-headerTarj">Mis comienzos</h3>
-                            <p class="m-0"><strong>Apasionada por todo aquello que nos une</strong>, comencé mi carrera por el lado del coaching y los recursos humanos. Más tarde, hacia mis 30 años, encontré en el maquillaje la excusa perfecta para explorar esos vínculos, a través de la estética.</p>
+    <main class="container h-100 my-2">
+        <div class="row justify-content-around align-items-center h-100">
+            <div class="bioTxt col-lg-7 col-md-11 col-sm-11">
+                <div class="card tarjBio1 mb-3 border-0 shadow">
+                    <div class="col">
+                        <div class="row">
+                            <div class="card-header-hor col-md-12 col-lg-1 shadow m-0 text-light fw-bold text-center">
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <div class="cardContTxt col-md-12 col-lg-11">
+                                <h3 class="txt-headerTarj pb-1 m-0">Mis comienzos</h3>
+                                <p class="card-text"><strong>Apasionada por todo aquello que nos une</strong>, comencé mi carrera por el lado del coaching y los recursos humanos. Más tarde, hacia mis 30 años, encontré en el maquillaje la excusa perfecta para explorar esos vínculos, a través de la estética.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="tarjBio2 card p-0 border-0 shadow">
-                    <div class="row h-100 p-0">
-                        <div class="card-header-hor col-md-1"></div>
-                        <div class="col-md-11 m-0 p-2">
-                            <h3 class="txt-bio txt-headerTarj">Trayectoria</h3>
-                            <p class="m-0">Habiendo encontrado en la estética un camino hacia la salud, y con el respaldo de una carrera exitosa en los centros de capacitación de <strong>LACA Argentina</strong>, hace más de 10 años que despliego mis pasión por vernos y sentirnos mejor. En este tiempo, fueron más de 125 eventos en los que tuve el placer de maquillar a unas 200 mujeres de todas las edades y características, explorando un sinfín de bellezas únicas, que dieron origen a una infinidad de relaciones hermosas y duraderas.</p>
+                <div class="card tarjBio2 mb-3 border-0 shadow">
+                    <div class="col">
+                        <div class="row">
+                            <div class="card-header-hor col-md-12 col-lg-1 shadow m-0 text-light fw-bold text-center">
+                                <i class="bi bi-graph-up"></i>
+                            </div>
+                            <div class="cardContTxt col-md-12 col-lg-11">
+                                <h3 class="txt-headerTarj pb-1 m-0">Trayectoria</h3>
+                                <p class="card-text">Habiendo encontrado en la estética un camino hacia la salud, y con el respaldo de una carrera exitosa en los centros de capacitación de <strong>LACA Argentina</strong>, hace más de 10 años que despliego mis pasión por vernos y sentirnos mejor. En este tiempo, fueron más de 125 eventos en los que tuve el placer de maquillar a unas 200 mujeres de todas las edades y características, explorando un sinfín de bellezas únicas, que dieron origen a una infinidad de relaciones hermosas y duraderas.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="tarjBio3 card p-0 border-0 shadow">
-                    <div class="row h-100 p-0">
-                        <div class="card-header-hor col-md-1"></div>
-                        <div class="col-md-11 m-0 p-2">
-                            <h3 class="txt-bio txt-headerTarj">Visión</h3>
-                            <p class="m-0"><strong>Creo en la belleza única de todas y cada una de nosotras</strong>, y en el poder que tienen el cuidado de la piel y el maquillaje para que esa belleza aflore, en el ámbito cuidado que todas merecemos.</p>
+                <div class="card tarjBio3 border-0 shadow">
+                    <div class="col">
+                        <div class="row">
+                            <div class="card-header-hor col-md-12 col-lg-1 shadow m-0 text-light fw-bold text-center">
+                                <i class="bi bi-eye"></i>
+                            </div>
+                            <div class="cardContTxt col-md-12 col-lg-11">
+                                <h3 class="txt-headerTarj pb-1 m-0">Visión</h3>
+                                <p class="card-text"><strong>Creo en la belleza única de todas y cada una de nosotras</strong>, y en el poder que tienen el cuidado de la piel y el maquillaje para que esa belleza aflore, en el ámbito cuidado que todas merecemos.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- COLUMNA FOTO -->
-            <div class="col-md-12 col-lg-4 ps-2 pe-2">
-                    <div class="img-fluid">
-                        <img class="imgBio shadow" src="../imagenes/df.jpg" alt="Portfolio"></a>
-                    </div>
-
+            <div class="contBioFoto col-lg-4 ps-2 pe-2">
+                <div class="img-fluid">
+                    <img class="imgBio shadow" src="../imagenes/df.jpg" alt="Portfolio"></a>
+                </div>
             </div>
         </div>
     </main>

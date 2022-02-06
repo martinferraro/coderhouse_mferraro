@@ -15,11 +15,6 @@
     padding: 0;
 }
 
-.navbar-toggler {
-    color: $claro;
-    border-style: none;
-}
-
 .navbar-light .navbar-nav .nav-link {
     color: $claro;
     padding-right: 1rem;
@@ -34,4 +29,9 @@
 
 .img-enc {
     height: 30px;
+}
+
+.bi-house, .bi-brush, .bi-book, .bi-person-circle, .bi-envelope {
+    font-size: 1rem!important;
+    color: map-get($colorTipo, h5)!important;
 }

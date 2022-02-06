@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 @import "general", "header", "footer";
 
+
+
 /* CSS RESET */
 * {
     padding: 0;
@@ -186,23 +188,17 @@ transform: scale(1.1);
 
 .tarj-maquillaje {
   animation: fadein1 1.3s;
-
-  &:hover {
-    transform: scale(1.02);
-  }
 }
 
 .tarj-skin {
   animation: fadein2 1.3s;
-
-  &:hover {
-    transform: scale(1.02);
-  }
 }
 
 .tarj-talleres {
   animation: fadein3 1.3s;
+}
 
+.tarj-maquillaje, .tarj-skin, .tarj-talleres {
   &:hover {
     transform: scale(1.02);
   }
@@ -271,12 +267,12 @@ transform: scale(1.1);
   }
 }
 
-.galeria {
-  animation: fadein1 1.3s;
-}
-
 .portfolioVidTest {
   @include flex-col-center-sb;
+}
+
+.galeria {
+  animation: fadein1 1.3s;
 }
 
 .video {
@@ -288,22 +284,23 @@ transform: scale(1.1);
 }
 
 /* BIOGRAFIA */
+.cardContTxt {
+  padding: 1rem;
+  margin: 0!important;
+}
 
 .card-header-hor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: $radio 0 0 $radio;
   margin: 0;
   padding: 0;
 }
 
-.tarjBio1, .tarjBio2, .tarjBio3 {
-  h5 {
-    color: $intenso;
-  }
-}
-
-.colTarjBio {
-  @include flex-col-center-sb;
-  height: 30rem;
+.card-header-hor > .bi {
+  font-size: 1.5rem!important;
+  color: map-get($colorTipo, h5)!important;
 }
 
 .imgBio {
@@ -319,16 +316,10 @@ transform: scale(1.1);
   }
 }
 
-.tarjBio1 {
-  animation: fadein1 1.3s;
-}
-
-.tarjBio2 {
-  animation: fadein2 1.3s;
-}
-
-.tarjBio3 {
-  animation: fadein3 1.3s;
+@for $numTarjBio from 1 to 4 {
+  .tarjBio#{$numTarjBio} {
+    animation: fadein#{$numTarjBio} 1.3s;
+  }
 }
 
 /* CONTACTO */
@@ -366,10 +357,6 @@ label {
   color: $btn;
 }
 
-.tel-tarjeta {
-  font-size: 1.2rem;
-}
-
 .formulario {
   animation: pop .25s;
 }
@@ -378,16 +365,12 @@ label {
   padding-right: .5rem;
 }
 
-div.email.container.col-lg-6 {
+div.email.container.col-lg-6, div.telefono.container.col-lg-6 {
   margin: 0;
 }
 
 .telefono {
   padding-left: .5rem;
-}
-
-div.telefono.container.col-lg-6 {
-  margin: 0;
 }
 
 @keyframes pop {
@@ -401,7 +384,7 @@ div.telefono.container.col-lg-6 {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 912px) {
+@media only screen and (max-width: 992px) {
   body {
     background-repeat: repeat-y;
   }
@@ -445,9 +428,22 @@ div.telefono.container.col-lg-6 {
   .colTarjBio {
     height: 35rem;
   }
+
+  .card-body {
+    margin-top: .5rem;
+  }
+
+  .card-header-hor {
+    border-radius: $radio $radio 0 0;
+  }
+  
+  .txt-headerTarj {
+    text-align: center;
+  }
+
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .card-img-top {
     height: 14rem;
   }
@@ -456,12 +452,17 @@ div.telefono.container.col-lg-6 {
     max-height: 12rem;
   }
 
-  .card-header-hor {
+  .contBioFoto {
+    height: 5rem;
+  }
+  
+  .contBioFoto {
     display: none;
   }
+
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 576px) {
   .cont-imgLat {
     display: none;
   }
@@ -486,5 +487,13 @@ div.telefono.container.col-lg-6 {
 
   .txt-testimoniosLargo, .imgBio {
     display: none;
+  }
+  
+  .card-body {
+    margin-top: 0;
+  }
+
+  .txtContactoEspera {
+    padding-top: .5rem!important;
   }
 }

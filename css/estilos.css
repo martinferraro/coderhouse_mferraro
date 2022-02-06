@@ -113,11 +113,6 @@ h1 {
   padding: 0;
 }
 
-.navbar-toggler {
-  color: #fcf9fb;
-  border-style: none;
-}
-
 .navbar-light .navbar-nav .nav-link {
   color: #fcf9fb;
   padding-right: 1rem;
@@ -132,6 +127,11 @@ h1 {
 
 .img-enc {
   height: 30px;
+}
+
+.bi-house, .bi-brush, .bi-book, .bi-person-circle, .bi-envelope {
+  font-size: 1rem !important;
+  color: #fcf9fb !important;
 }
 
 /* PIE DE PAGINA */
@@ -394,19 +394,9 @@ body {
           animation: fadein1 1.3s;
 }
 
-.tarj-maquillaje:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-}
-
 .tarj-skin {
   -webkit-animation: fadein2 1.3s;
           animation: fadein2 1.3s;
-}
-
-.tarj-skin:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
 }
 
 .tarj-talleres {
@@ -414,7 +404,7 @@ body {
           animation: fadein3 1.3s;
 }
 
-.tarj-talleres:hover {
+.tarj-maquillaje:hover, .tarj-skin:hover, .tarj-talleres:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
@@ -510,11 +500,6 @@ body {
   margin: 0;
 }
 
-.galeria {
-  -webkit-animation: fadein1 1.3s;
-          animation: fadein1 1.3s;
-}
-
 .portfolioVidTest {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -530,6 +515,11 @@ body {
           justify-content: space-between;
 }
 
+.galeria {
+  -webkit-animation: fadein1 1.3s;
+          animation: fadein1 1.3s;
+}
+
 .video {
   -webkit-animation: fadein2 1.3s;
           animation: fadein2 1.3s;
@@ -541,30 +531,29 @@ body {
 }
 
 /* BIOGRAFIA */
+.cardContTxt {
+  padding: 1rem;
+  margin: 0 !important;
+}
+
 .card-header-hor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 1rem 0 0 1rem;
   margin: 0;
   padding: 0;
 }
 
-.tarjBio1 h5, .tarjBio2 h5, .tarjBio3 h5 {
-  color: #ce4e9d;
-}
-
-.colTarjBio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 30rem;
+.card-header-hor > .bi {
+  font-size: 1.5rem !important;
+  color: #fcf9fb !important;
 }
 
 .imgBio {
@@ -636,10 +625,6 @@ label {
   color: #cc8db4;
 }
 
-.tel-tarjeta {
-  font-size: 1.2rem;
-}
-
 .formulario {
   -webkit-animation: pop .25s;
           animation: pop .25s;
@@ -649,16 +634,12 @@ label {
   padding-right: .5rem;
 }
 
-div.email.container.col-lg-6 {
+div.email.container.col-lg-6, div.telefono.container.col-lg-6 {
   margin: 0;
 }
 
 .telefono {
   padding-left: .5rem;
-}
-
-div.telefono.container.col-lg-6 {
-  margin: 0;
 }
 
 @-webkit-keyframes pop {
@@ -684,7 +665,7 @@ div.telefono.container.col-lg-6 {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 912px) {
+@media only screen and (max-width: 992px) {
   body {
     background-repeat: repeat-y;
   }
@@ -718,21 +699,33 @@ div.telefono.container.col-lg-6 {
   .colTarjBio {
     height: 35rem;
   }
+  .card-body {
+    margin-top: .5rem;
+  }
+  .card-header-hor {
+    border-radius: 1rem 1rem 0 0;
+  }
+  .txt-headerTarj {
+    text-align: center;
+  }
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .card-img-top {
     height: 14rem;
   }
   .gal-img img {
     max-height: 12rem;
   }
-  .card-header-hor {
+  .contBioFoto {
+    height: 5rem;
+  }
+  .contBioFoto {
     display: none;
   }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 576px) {
   .cont-imgLat {
     display: none;
   }
@@ -753,6 +746,12 @@ div.telefono.container.col-lg-6 {
   }
   .txt-testimoniosLargo, .imgBio {
     display: none;
+  }
+  .card-body {
+    margin-top: 0;
+  }
+  .txtContactoEspera {
+    padding-top: 0.5rem !important;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
