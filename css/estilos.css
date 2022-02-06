@@ -239,10 +239,6 @@ body {
 }
 
 /* MAIN PORTADA */
-.contIndex {
-  max-width: 1000px;
-}
-
 .contIndex .bi {
   font-size: 1.2rem !important;
   color: #fcf9fb !important;
@@ -287,7 +283,7 @@ body {
   }
 }
 
-.txtTrabajosIndex {
+.txtPortfolioIndex {
   display: none;
 }
 
@@ -762,7 +758,7 @@ div.email.container.col-lg-6, div.telefono.container.col-lg-6 {
   .contImgLat {
     display: none;
   }
-  .txtTrabajosIndex {
+  .txtPortfolioIndex {
     display: block;
   }
   .card-img-top {

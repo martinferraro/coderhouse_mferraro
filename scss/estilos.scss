@@ -64,13 +64,9 @@ transform: scale(1.1);
   
 /* MAIN PORTADA */
 
-.contIndex {
-  max-width: 1000px;
-
-  .bi {
+.contIndex .bi {
     font-size: 1.2rem!important;
     color: map-get($colorTipo, h5)!important;
-  }
 }
 
 .contPpalTxt div {
@@ -95,7 +91,7 @@ transform: scale(1.1);
   }
 }
 
-.txtTrabajosIndex {
+.txtPortfolioIndex {
   display: none;
 }
 
@@ -488,7 +484,7 @@ div.email.container.col-lg-6, div.telefono.container.col-lg-6 {
     display: none;
   }
   
-  .txtTrabajosIndex {
+  .txtPortfolioIndex {
     display: block;
   }
 
