@@ -125,7 +125,7 @@ h1 {
   background-color: #ce4e9d;
 }
 
-.img-enc {
+.imgEnc {
   height: 30px;
 }
 
@@ -164,7 +164,7 @@ h1 {
   font-size: 0.8rem !important;
 }
 
-.ico-pie {
+.pieIco {
   font-size: 1rem !important;
   color: #fcf9fb !important;
 }
@@ -213,7 +213,7 @@ body {
   padding: 0;
 }
 
-.txt-headerTarj {
+.txtHeaderTarj {
   letter-spacing: .1rem;
   font-weight: bold;
   color: #ce4e9d;
@@ -239,11 +239,11 @@ body {
 }
 
 /* MAIN PORTADA */
-.cont-index {
+.contIndex {
   max-width: 1000px;
 }
 
-.cont-index .bi {
+.contIndex .bi {
   font-size: 1.2rem !important;
   color: #fcf9fb !important;
 }
@@ -292,7 +292,7 @@ body {
 }
 
 /* Imagen portada c/ hover overlay */
-.img-lat {
+.imgLat {
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
@@ -359,7 +359,7 @@ body {
   }
 }
 
-.btn-img {
+.btnImg {
   -webkit-transition: .5s ease;
   transition: .5s ease;
   opacity: 0;
@@ -372,11 +372,11 @@ body {
   text-align: center;
 }
 
-.img-lat:hover .imgIndex {
+.imgLat:hover .imgIndex {
   opacity: 0.5;
 }
 
-.img-lat:hover .btn-img {
+.imgLat:hover .btnImg {
   opacity: 1;
 }
 
@@ -389,7 +389,7 @@ body {
   padding: 0 1rem 1rem 1rem;
 }
 
-.card-header, .card-header-hor {
+.card-header, .cardHeaderBio {
   background-color: #cc8db4;
   border: 0;
 }
@@ -492,11 +492,11 @@ body {
 }
 
 /* PORTFOLIO */
-.txt-testimoniosCorto {
+.txtTestimCorto {
   display: none;
 }
 
-.img-car {
+.imgCar {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -552,7 +552,7 @@ body {
   margin: 0 !important;
 }
 
-.card-header-hor {
+.cardHeaderBio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -567,7 +567,7 @@ body {
   padding: 0;
 }
 
-.card-header-hor > .bi {
+.cardHeaderBio > .bi {
   font-size: 1.5rem !important;
   color: #fcf9fb !important;
 }
@@ -628,12 +628,8 @@ label {
   padding: .5rem 0 .25rem 0;
 }
 
-.img-contacto {
+.imgContacto {
   width: 25rem;
-}
-
-.txt-contactoEnc {
-  text-align: end;
 }
 
 .bi {
@@ -709,16 +705,16 @@ div.email.container.col-lg-6, div.telefono.container.col-lg-6 {
   .imgIndex {
     opacity: .5;
   }
-  .btn-img {
+  .btnImg {
     opacity: 1;
   }
   .card-img-top {
     height: 18rem;
   }
-  .cont-iconos hr, .img-contacto {
+  .imgContacto {
     display: none;
   }
-  .tarjeta-iconos {
+  .tarjIco {
     margin-top: 0 !important;
   }
   .ms-auto {
@@ -736,10 +732,10 @@ div.email.container.col-lg-6, div.telefono.container.col-lg-6 {
   .card-body {
     margin-top: .5rem;
   }
-  .card-header-hor {
+  .cardHeaderBio {
     border-radius: 1rem 1rem 0 0;
   }
-  .txt-headerTarj {
+  .txtHeaderTarj {
     text-align: center;
   }
   .contBioFoto {
@@ -754,34 +750,28 @@ div.email.container.col-lg-6, div.telefono.container.col-lg-6 {
   .card-img-top {
     height: 14rem;
   }
-  .gal-img img {
-    max-height: 12rem;
-  }
 }
 
 @media only screen and (max-width: 576px) {
-  .cont-imgLat {
+  .contImgLat {
     display: none;
   }
   .txtTrabajosIndex {
-    display: none;
+    display: block;
   }
   .card-img-top {
     height: 8rem;
   }
-  .txt-contacto {
-    display: none;
-  }
-  .img-car {
+  .imgCar {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
     height: 15rem;
   }
-  .txt-testimoniosCorto {
+  .txtTestimCorto {
     display: block;
   }
-  .txt-testimoniosLargo, .imgBio {
+  .txtTestimLargo, .imgBio {
     display: none;
   }
   .card-body {
