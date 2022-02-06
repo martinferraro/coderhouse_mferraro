@@ -747,6 +747,9 @@ div.email.container.col-lg-6, div.telefono.container.col-lg-6 {
   .contImgLat {
     padding: 0 0 1.5rem 0;
   }
+  .txtContactoEspera {
+    padding: 1rem 0 1rem 0 !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -779,9 +782,6 @@ div.email.container.col-lg-6, div.telefono.container.col-lg-6 {
   }
   .card-body {
     margin-top: 0;
-  }
-  .txtContactoEspera {
-    padding-top: 0.5rem !important;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
