@@ -220,9 +220,16 @@ body {
 }
 
 /* BOTONES */
-.btn-primary, .btn-check:active + .btn-primary, .btn-check:checked + .btn-primary, .btn-primary.active, .btn-primary:active, .btn-primary.dropdown-toggle {
+.btn-primary, .btn-check:active + .btn-primary, .btn-check:checked + .btn-primary, .btn-primary.dropdown-toggle {
   background-color: #cc8db4;
   border-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5rem 1.2rem .5rem 1.2rem;
 }
 
 .btn-primary:hover, .btn-check:active + .btn-primary:hover, .btn-check:checked + .btn-primary:hover {
@@ -234,6 +241,11 @@ body {
 /* MAIN PORTADA */
 .cont-index {
   max-width: 1000px;
+}
+
+.cont-index .bi {
+  font-size: 1.2rem !important;
+  color: #fcf9fb !important;
 }
 
 .contPpalTxt div {
@@ -630,6 +642,11 @@ label {
           animation: pop .25s;
 }
 
+.formulario .bi {
+  font-size: 1.2rem !important;
+  color: #fcf9fb !important;
+}
+
 .email {
   padding-right: .5rem;
 }
@@ -708,6 +725,9 @@ div.email.container.col-lg-6, div.telefono.container.col-lg-6 {
   .txt-headerTarj {
     text-align: center;
   }
+  .contBioFoto {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -716,12 +736,6 @@ div.email.container.col-lg-6, div.telefono.container.col-lg-6 {
   }
   .gal-img img {
     max-height: 12rem;
-  }
-  .contBioFoto {
-    height: 5rem;
-  }
-  .contBioFoto {
-    display: none;
   }
 }
 

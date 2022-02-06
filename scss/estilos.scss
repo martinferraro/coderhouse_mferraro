@@ -42,17 +42,15 @@ color: $intenso;
 /* BOTONES */
 
 .btn-primary {
-background-color: $btn;
-border-style: none;
+  background-color: $btn;
+  border-style: none;
+  display: inline-flex;
+  align-items: center;
+  padding: .5rem 1.2rem .5rem 1.2rem;
 }
 
 .btn-check {
 &:active + .btn-primary, &:checked + .btn-primary {
-  @extend .btn-primary;
-}
-}
-.btn-primary {
-&.active, &:active {
   @extend .btn-primary;
 }
 }
@@ -70,6 +68,11 @@ transform: scale(1.1);
 
 .cont-index {
   max-width: 1000px;
+
+  .bi {
+    font-size: 1.2rem!important;
+    color: map-get($colorTipo, h5)!important;
+  }
 }
 
 .contPpalTxt div {
@@ -359,6 +362,10 @@ label {
 
 .formulario {
   animation: pop .25s;
+  .bi {
+    font-size: 1.2rem!important;
+    color: map-get($colorTipo, h5)!important;
+  }
 }
 
 .email {
@@ -441,6 +448,11 @@ div.email.container.col-lg-6, div.telefono.container.col-lg-6 {
     text-align: center;
   }
 
+  .contBioFoto {
+    display: none;
+  }
+
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -450,14 +462,6 @@ div.email.container.col-lg-6, div.telefono.container.col-lg-6 {
 
   .gal-img img {
     max-height: 12rem;
-  }
-
-  .contBioFoto {
-    height: 5rem;
-  }
-  
-  .contBioFoto {
-    display: none;
   }
 
 }
