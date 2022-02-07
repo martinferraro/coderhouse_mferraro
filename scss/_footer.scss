@@ -13,13 +13,13 @@
     }
 }
 
-.pieIg {
+.pie__linkIg {
     display: flex;
     align-items: center;
     font-size: .8rem!important;
 }
 
-.pieIco {
+.pie__icoIg {
     font-size: 1rem!important;
     color: map-get($colorTipo, h5)!important;
 }
