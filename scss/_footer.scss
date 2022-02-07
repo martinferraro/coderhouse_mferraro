@@ -11,15 +11,14 @@
     h5 {
         margin: 0;
     }
+
+    .bi {
+        @include icono-tipo-1
+    }
 }
 
 .pie__linkIg {
     display: flex;
     align-items: center;
     font-size: .8rem!important;
-}
-
-.pie__icoIg {
-    font-size: 1rem!important;
-    color: map-get($colorTipo, h5)!important;
 }

@@ -9,32 +9,50 @@
 
 /* GENERAL */
 body {
-min-height: 100vh;
-font-family: "DM+Sans", sans-serif;
-background-color: $gral;
-background-image: url(/imagenes/fondo_ondas.svg);
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: 100%;
-@include flex-col-center-sb;
+  min-height: 100vh;
+  font-family: "DM+Sans", sans-serif;
+  background-color: $fondo-gral;
+  background-image: url(/imagenes/fondo_prisma.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  @include flex-col-center-sb;
 }
 
 .row {
-> * {
-    margin-top: 0;
-}
-margin: 0;
-justify-content: center;
+  > * {
+      margin-top: 0;
+  }
+  margin: 0;
+  justify-content: center;
 }
 
 .container {
-padding: 0;
+  padding: 0;
+}
+.card {
+  border-radius: $radio;
+  background-image: url(/imagenes/fondo_card.svg);
+}
+
+.card-body {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.card-header {
+  background-color: $enc;
+  border: 0;
+}
+
+.card-header:first-child {
+  border-radius: $radio $radio 0 0;
+  margin: 0;
 }
 
 .card__headerTxt {
-letter-spacing: .1rem;
-font-weight: bold;
-color: $intenso;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  color: $claro;
 }
 
 /* BOTONES */
@@ -58,20 +76,21 @@ color: $intenso;
 }
 
 .btn-primary:hover {
-background-color: $intenso;
-transform: scale(1.1);
+  background-color: $intenso;
+  transform: scale(1.1);
 }
   
 /* MAIN PORTADA */
 
 .main--index .bi {
-    font-size: 1.2rem!important;
-    color: map-get($colorTipo, h5)!important;
+  @include icono-tipo-1;
 }
 
-.main__txtIndex div {
-  padding: 2%;
-
+.main__txtIndex {
+  div {
+    padding: 2%;
+  }
+  
   img {
     animation: escala 5s;
   }
@@ -164,44 +183,22 @@ transform: scale(1.1);
 
 /* SERVICIOS */
 
-.card {
-  border-radius: $radio;
-}
-
-.card-body {
-  padding: 0 1rem 1rem 1rem;
-}
-
-.card-header, .card__header--bio {
-  background-color: $enc;
-  border: 0;
-}
-
-.card-header:first-child {
-  border-radius: $radio $radio 0 0;
-  margin: 0;
-}
-
 .card-img-top {
   height: 15rem;
   object-fit: cover;
 }
 
-.card--maquillaje {
-  animation: fadein1 1.3s;
-}
-
-.card--skin {
-  animation: fadein2 1.3s;
-}
-
-.card--talleres {
-  animation: fadein3 1.3s;
-}
-
-.card--maquillaje, .card--skin, .card--talleres {
+@for $numcard-serv from 1 to 4 {
+  .card--serv#{$numcard-serv} {
+    animation: fadein#{$numcard-serv} 1.3s;
+  
   &:hover {
     transform: scale(1.02);
+  }
+
+  .bi {
+    @include icono-tipo-3;
+  };
   }
 }
 
@@ -268,16 +265,14 @@ transform: scale(1.1);
   }
 }
 
-.card--galeria {
-  animation: fadein1 1.3s;
-}
+@for $numcard-port from 1 to 4 {
+  .card--port#{$numcard-port} {
+    animation: fadein#{$numcard-port} 1.3s;
 
-.card--video {
-  animation: fadein2 1.3s;
-}
-
-.card--testim {
-  animation: fadein3 1.3s;
+  .bi {
+    @include icono-tipo-3;
+  };
+  }
 }
 
 /* BIOGRAFIA */
@@ -286,14 +281,17 @@ transform: scale(1.1);
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: $enc;
   border-radius: $radio 0 0 $radio;
-  margin: 0;
-  padding: 0;
-  
+
   .bi {
-    font-size: 1.5rem!important;
-    color: map-get($colorTipo, h5)!important;
+    @include icono-tipo-4;
   }
+}
+
+.card__headerTxt--bio {
+  color: $intenso;
+  font-weight: bold;
 }
 
 .imgBio {
@@ -311,9 +309,9 @@ transform: scale(1.1);
   }
 }
 
-@for $numcard--bio from 1 to 4 {
-  .card--bio#{$numcard--bio} {
-    animation: fadein#{$numcard--bio} 1.3s;
+@for $numcard-bio from 1 to 4 {
+  .card--bio#{$numcard-bio} {
+    animation: fadein#{$numcard-bio} 1.3s;
   }
 }
 
@@ -343,16 +341,16 @@ label {
   width: 25rem;
 }
 
-.bi {
-  font-size: 1.8rem;
-  color: $btn;
+.card__contactoIco {
+  .bi {
+    @include icono-tipo-2;
+  }
 }
 
 .formulario {
   animation: pop .25s;
   .bi {
-    font-size: 1.2rem!important;
-    color: map-get($colorTipo, h5)!important;
+    @include icono-tipo-1;
   }
 }
 
@@ -441,7 +439,7 @@ div.form__email.container.col-lg-6, div.form__telefono.container.col-lg-6 {
     border-radius: $radio $radio 0 0;
   }
   
-  .card__headerTxt {
+  .card__headerTxt--bio {
     text-align: center;
   }
 
@@ -466,7 +464,6 @@ div.form__email.container.col-lg-6, div.form__telefono.container.col-lg-6 {
   .card-img-top {
     height: 14rem;
   }
-
 }
 
 @media only screen and (max-width: 576px) {
@@ -495,5 +492,4 @@ div.form__email.container.col-lg-6, div.form__telefono.container.col-lg-6 {
   .card-body {
     margin-top: 0;
   }
-
 }

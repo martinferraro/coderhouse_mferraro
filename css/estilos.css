@@ -101,6 +101,15 @@ h1 {
   z-index: 1;
 }
 
+.navbar .bi {
+  font-size: 1rem;
+  color: #fcf9fb;
+}
+
+.navbar__imgEnc {
+  height: 1.8rem;
+}
+
 .collapse {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -125,15 +134,6 @@ h1 {
   background-color: #ce4e9d;
 }
 
-.navbar__imgEnc {
-  height: 30px;
-}
-
-.bi-house, .bi-brush, .bi-book, .bi-person-circle, .bi-envelope {
-  font-size: 1rem !important;
-  color: #fcf9fb !important;
-}
-
 /* PIE DE PAGINA */
 .pie {
   display: -webkit-box;
@@ -154,6 +154,11 @@ h1 {
   margin: 0;
 }
 
+.pie .bi {
+  font-size: 1rem;
+  color: #fcf9fb;
+}
+
 .pie__linkIg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,11 +167,6 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   font-size: 0.8rem !important;
-}
-
-.pie__icoIg {
-  font-size: 1rem !important;
-  color: #fcf9fb !important;
 }
 
 /* CSS RESET */
@@ -180,7 +180,7 @@ body {
   min-height: 100vh;
   font-family: "DM+Sans", sans-serif;
   background-color: #fcf9fb;
-  background-image: url(/imagenes/fondo_ondas.svg);
+  background-image: url(/imagenes/fondo_prisma.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
@@ -213,10 +213,29 @@ body {
   padding: 0;
 }
 
+.card {
+  border-radius: 1rem;
+  background-image: url(/imagenes/fondo_card.svg);
+}
+
+.card-body {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.card-header {
+  background-color: #cc8db4;
+  border: 0;
+}
+
+.card-header:first-child {
+  border-radius: 1rem 1rem 0 0;
+  margin: 0;
+}
+
 .card__headerTxt {
   letter-spacing: .1rem;
   font-weight: bold;
-  color: #ce4e9d;
+  color: #fcf9fb;
 }
 
 /* BOTONES */
@@ -240,15 +259,15 @@ body {
 
 /* MAIN PORTADA */
 .main--index .bi {
-  font-size: 1.2rem !important;
-  color: #fcf9fb !important;
+  font-size: 1rem;
+  color: #fcf9fb;
 }
 
 .main__txtIndex div {
   padding: 2%;
 }
 
-.main__txtIndex div img {
+.main__txtIndex img {
   -webkit-animation: escala 5s;
           animation: escala 5s;
 }
@@ -377,48 +396,55 @@ body {
 }
 
 /* SERVICIOS */
-.card {
-  border-radius: 1rem;
-}
-
-.card-body {
-  padding: 0 1rem 1rem 1rem;
-}
-
-.card-header, .card__header--bio {
-  background-color: #cc8db4;
-  border: 0;
-}
-
-.card-header:first-child {
-  border-radius: 1rem 1rem 0 0;
-  margin: 0;
-}
-
 .card-img-top {
   height: 15rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.card--maquillaje {
+.card--serv1 {
   -webkit-animation: fadein1 1.3s;
           animation: fadein1 1.3s;
 }
 
-.card--skin {
+.card--serv1:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.card--serv1 .bi {
+  font-size: 1.2rem;
+  color: #e49dc9;
+}
+
+.card--serv2 {
   -webkit-animation: fadein2 1.3s;
           animation: fadein2 1.3s;
 }
 
-.card--talleres {
+.card--serv2:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.card--serv2 .bi {
+  font-size: 1.2rem;
+  color: #e49dc9;
+}
+
+.card--serv3 {
   -webkit-animation: fadein3 1.3s;
           animation: fadein3 1.3s;
 }
 
-.card--maquillaje:hover, .card--skin:hover, .card--talleres:hover {
+.card--serv3:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+.card--serv3 .bi {
+  font-size: 1.2rem;
+  color: #e49dc9;
 }
 
 @-webkit-keyframes fadein1 {
@@ -512,19 +538,34 @@ body {
   margin: 0;
 }
 
-.card--galeria {
+.card--port1 {
   -webkit-animation: fadein1 1.3s;
           animation: fadein1 1.3s;
 }
 
-.card--video {
+.card--port1 .bi {
+  font-size: 1.2rem;
+  color: #e49dc9;
+}
+
+.card--port2 {
   -webkit-animation: fadein2 1.3s;
           animation: fadein2 1.3s;
 }
 
-.card--testim {
+.card--port2 .bi {
+  font-size: 1.2rem;
+  color: #e49dc9;
+}
+
+.card--port3 {
   -webkit-animation: fadein3 1.3s;
           animation: fadein3 1.3s;
+}
+
+.card--port3 .bi {
+  font-size: 1.2rem;
+  color: #e49dc9;
 }
 
 /* BIOGRAFIA */
@@ -538,14 +579,18 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #cc8db4;
   border-radius: 1rem 0 0 1rem;
-  margin: 0;
-  padding: 0;
 }
 
 .card__header--bio .bi {
-  font-size: 1.5rem !important;
-  color: #fcf9fb !important;
+  font-size: 1.6rem;
+  color: #fcf9fb;
+}
+
+.card__headerTxt--bio {
+  color: #ce4e9d;
+  font-weight: bold;
 }
 
 .imgBio img {
@@ -608,7 +653,7 @@ label {
   width: 25rem;
 }
 
-.bi {
+.card__contactoIco .bi {
   font-size: 1.8rem;
   color: #cc8db4;
 }
@@ -619,8 +664,8 @@ label {
 }
 
 .formulario .bi {
-  font-size: 1.2rem !important;
-  color: #fcf9fb !important;
+  font-size: 1rem;
+  color: #fcf9fb;
 }
 
 @-webkit-keyframes pop {
@@ -708,7 +753,7 @@ div.form__email.container.col-lg-6, div.form__telefono.container.col-lg-6 {
   .card__header--bio {
     border-radius: 1rem 1rem 0 0;
   }
-  .card__headerTxt {
+  .card__headerTxt--bio {
     text-align: center;
   }
   .imgBio {

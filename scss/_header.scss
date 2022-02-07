@@ -4,6 +4,14 @@
     padding: 0;
     background-color: $headfoot;
     z-index: 1;
+
+    .bi {
+        @include icono-tipo-1
+    }
+}
+
+.navbar__imgEnc {
+    height: 1.8rem;
 }
 
 .collapse {
@@ -20,18 +28,9 @@
     padding-right: 1rem;
     padding-left: 1rem;
     text-align: end;
-        
-        &:hover {
-            color: $claro;
-            background-color: $intenso;
-        }
-}
 
-.navbar__imgEnc {
-    height: 30px;
-}
-
-.bi-house, .bi-brush, .bi-book, .bi-person-circle, .bi-envelope {
-    font-size: 1rem!important;
-    color: map-get($colorTipo, h5)!important;
+    &:hover {
+        color: $claro;
+        background-color: $intenso;
+    }
 }

@@ -1,12 +1,33 @@
 $headfoot:#8fa8c2;
-$gral: #fcf9fb;
+$fondo-gral: #fcf9fb;
 $enc: #cc8db4;
 $btn: $enc;
 $intenso:#ce4e9d;
 $claro: #fcf9fb;
 $gris:#646464;
+$icono-tipo-3: #e49dc9;
 
 $radio: 1rem;
+
+@mixin icono-tipo-1 {
+    font-size: 1rem;
+    color: map-get($colorTipo, h5);
+}
+
+@mixin icono-tipo-2 {
+    font-size: 1.8rem;
+    color: $btn;
+}
+
+@mixin icono-tipo-3 {
+    font-size: 1.2rem;
+    color: $icono-tipo-3;
+}
+
+@mixin icono-tipo-4 {
+    font-size: 1.6rem;
+    color: map-get($colorTipo, h5);
+}
 
 @mixin flex-col-center-sb {
     display: flex;
