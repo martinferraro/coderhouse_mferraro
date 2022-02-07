@@ -180,10 +180,9 @@ body {
   min-height: 100vh;
   font-family: "DM+Sans", sans-serif;
   background-color: #fcf9fb;
-  background-image: url(/imagenes/fondo_prisma.svg);
+  background-image: url(./imagenes/fondo_prisma.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,7 +214,7 @@ body {
 
 .card {
   border-radius: 1rem;
-  background-image: url(/imagenes/fondo_card.svg);
+  background-image: url(./imagenes/fondo_card.svg);
 }
 
 .card-body {
@@ -717,9 +716,6 @@ div.form__email.container.col-lg-6, div.form__telefono.container.col-lg-6 {
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 992px) {
-  body {
-    background-repeat: repeat-y;
-  }
   .row > * {
     margin: .5rem;
   }
