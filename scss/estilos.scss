@@ -187,19 +187,19 @@ transform: scale(1.1);
   object-fit: cover;
 }
 
-.tarjMaquillaje {
+.card--maquillaje {
   animation: fadein1 1.3s;
 }
 
-.tarjSkin {
+.card--skin {
   animation: fadein2 1.3s;
 }
 
-.tarjTalleres {
+.card--talleres {
   animation: fadein3 1.3s;
 }
 
-.tarjMaquillaje, .tarjSkin, .tarjTalleres {
+.card--maquillaje, .card--skin, .card--talleres {
   &:hover {
     transform: scale(1.02);
   }
@@ -268,10 +268,6 @@ transform: scale(1.1);
   }
 }
 
-.portfolioVidTest {
-  @include flex-col-center-sb;
-}
-
 .card--galeria {
   animation: fadein1 1.3s;
 }
@@ -285,10 +281,6 @@ transform: scale(1.1);
 }
 
 /* BIOGRAFIA */
-.card__txt {
-  padding: 1rem;
-  margin: 0!important;
-}
 
 .card__header--bio {
   display: flex;
@@ -319,9 +311,9 @@ transform: scale(1.1);
   }
 }
 
-@for $numTarjBio from 1 to 4 {
-  .tarjBio#{$numTarjBio} {
-    animation: fadein#{$numTarjBio} 1.3s;
+@for $numcard--bio from 1 to 4 {
+  .card--bio#{$numcard--bio} {
+    animation: fadein#{$numcard--bio} 1.3s;
   }
 }
 
@@ -439,10 +431,6 @@ div.form__email.container.col-lg-6, div.form__telefono.container.col-lg-6 {
 
   .form__telefono {
     padding-left: 0;
-  }
-
-  .colTarjBio {
-    height: 35rem;
   }
 
   .card-body {

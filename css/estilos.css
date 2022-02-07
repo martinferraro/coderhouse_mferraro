@@ -401,22 +401,22 @@ body {
      object-fit: cover;
 }
 
-.tarjMaquillaje {
+.card--maquillaje {
   -webkit-animation: fadein1 1.3s;
           animation: fadein1 1.3s;
 }
 
-.tarjSkin {
+.card--skin {
   -webkit-animation: fadein2 1.3s;
           animation: fadein2 1.3s;
 }
 
-.tarjTalleres {
+.card--talleres {
   -webkit-animation: fadein3 1.3s;
           animation: fadein3 1.3s;
 }
 
-.tarjMaquillaje:hover, .tarjSkin:hover, .tarjTalleres:hover {
+.card--maquillaje:hover, .card--skin:hover, .card--talleres:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
@@ -512,21 +512,6 @@ body {
   margin: 0;
 }
 
-.portfolioVidTest {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .card--galeria {
   -webkit-animation: fadein1 1.3s;
           animation: fadein1 1.3s;
@@ -543,11 +528,6 @@ body {
 }
 
 /* BIOGRAFIA */
-.card__txt {
-  padding: 1rem;
-  margin: 0 !important;
-}
-
 .card__header--bio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -588,17 +568,17 @@ body {
   }
 }
 
-.tarjBio1 {
+.card--bio1 {
   -webkit-animation: fadein1 1.3s;
           animation: fadein1 1.3s;
 }
 
-.tarjBio2 {
+.card--bio2 {
   -webkit-animation: fadein2 1.3s;
           animation: fadein2 1.3s;
 }
 
-.tarjBio3 {
+.card--bio3 {
   -webkit-animation: fadein3 1.3s;
           animation: fadein3 1.3s;
 }
@@ -721,9 +701,6 @@ div.form__email.container.col-lg-6, div.form__telefono.container.col-lg-6 {
   }
   .form__telefono {
     padding-left: 0;
-  }
-  .colTarjBio {
-    height: 35rem;
   }
   .card-body {
     margin-top: .5rem;
