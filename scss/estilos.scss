@@ -12,7 +12,7 @@ body {
   min-height: 100vh;
   font-family: "DM+Sans", sans-serif;
   background-color: $fondo-gral;
-  background-image: url(./imagenes/fondo_prisma.svg);
+  background-image: url(../imagenes/fondo_prisma.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   @include flex-col-center-sb;
@@ -31,7 +31,7 @@ body {
 }
 .card {
   border-radius: $radio;
-  background-image: url(./imagenes/fondo_card.svg);
+  background-image: url(../imagenes/fondo_card.svg);
 }
 
 .card-body {

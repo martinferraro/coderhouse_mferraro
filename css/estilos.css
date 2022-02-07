@@ -180,7 +180,7 @@ body {
   min-height: 100vh;
   font-family: "DM+Sans", sans-serif;
   background-color: #fcf9fb;
-  background-image: url(./imagenes/fondo_prisma.svg);
+  background-image: url(../imagenes/fondo_prisma.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: -webkit-box;
@@ -214,7 +214,7 @@ body {
 
 .card {
   border-radius: 1rem;
-  background-image: url(./imagenes/fondo_card.svg);
+  background-image: url(../imagenes/fondo_card.svg);
 }
 
 .card-body {
